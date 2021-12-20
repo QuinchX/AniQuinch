@@ -112,6 +112,7 @@ body
 {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 .links-button
 {
@@ -154,6 +155,13 @@ body
 	filter: drop-shadow(0 0 10px white);
 }
 
+/* Website Title */
+.main-website-title
+{
+	color: white;
+	font-size: 2rem;
+	font-style: oblique;
+}
 /* -------Left Sidebar------- */
 .left-sidebar-wrapper
 {
@@ -172,12 +180,24 @@ body
 	display: flex;
 	flex-direction: column;
 	margin-top: 100px;
-	margin-left: 5rem;
+}
+.sidebar-content-wrapper
+{
+	display: flex;
+	align-items: center;
+}
+.sidebar-icon
+{
+	width: 2rem;
+	height: 2rem;
+	filter: invert();
+	margin-left: 3rem;
 }
 .sidebar-button
 {
 	color: white;
-	padding: 1rem;
+	padding: 1.5rem;
+	margin-left: 1rem
 }
 
 /* -------Header------- */
@@ -221,11 +241,13 @@ body
 header
 {
 	color: white;
-	font-size: 10rem;
+	font-size: 5rem;
 	font-weight: 900;
 	font-style: oblique;
 	font-stretch: ultra-condensed;
 	text-shadow: 8px 4px #000000;
+	padding-left: 5rem;
+	padding-right: 5rem;
 }
 
 /* -------Main------- */
