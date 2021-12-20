@@ -3,71 +3,80 @@
 	<head>
 		<link rel="stylesheet"  href = "MyCss.css">
 		<link rel="icon" type="image" href="https://cdn-icons-png.flaticon.com/512/2362/2362719.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title> ANIME </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> AniQuinch </title>
 	</head>
 
 	<body>
 		<!-- -------Navbar------- -->
-		<div class="navbar-wrapper">
-			<ul class="navbar-wrapper1">
-				<li class="navigation-home">
-					<a href = "index.html" id="Home">Home</a>
-				</li>
-				<li class="navigation-products">
-					<a href = "contents/products/products.html" target="blank"> Products</a>
-				</li>
-				<li class="navigation-about">
-					<a href = "#About">About</a>
-				</li>
-				<li class="navigation-services">
-					<a href = "#Services">Services</a>
-				</li>
-				<li class="navigation-contacts">
-					<a href = "#Contacts">Contacts</a>
-				</li>
-			</ul>
-		</div>
-		<!-- -------Left Sidebar------- -->
-		<div class="left-sidebar-wrapper">
-			
-		</div>
-		<!-- -------Right Sidebar------- -->
-		<div class="right-sidebar-wrapper">
-			
+		<div class="container">
+			<nav class="navigation-container">
+				<div class="navbar-margin">
+					<div class="navbar-container">
+						<div class="menu" id="menu">
+							<div class="line1"></div>
+							<div class="line2"></div>
+							<div class="line3"></div>
+						</div>
+						<div class="links">
+							<a class="links-button" href = "index.html" id="Home">Home</a>
+							<a class="links-button" href = "#About">About</a>
+							<a class="links-button" href = "contents/products/products.html" target="blank"> Products</a>
+						</div>
+						<div class="cart">
+							<img src="images/shopping-cart.png" alt="cart" class="cart-icon">
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="sidebar-container" id="sidebar-container">
+				<div class="sidebar-wrapper">
+					<a class="sidebar-button" href="index.html"> Home </a>
+					<a class="sidebar-button" href="#About"> About </a>
+					<a class="sidebar-button" href="#Services"> Services </a>
+					<a class="sidebar-button" href="#Contacts"> Contacts </a>
+					<a class="sidebar-button" href="contents/products/products.html" target="blank"> Products </a>
+					<a class="sidebar-button" href="contents/login/login.html" target="blank"> Login </a>
+				</div>
+			</div>
 		</div>
 		<!-- -------Header------- -->
 		<div class="header-content-wrapper">
-			<div class="video-container">
-				<video autoplay muted loop id="myVideo">
-					<source src="images/THIS IS 4K ANIME Ultra HD Anime.mp4" type="video/mp4">
+			<div class="header-container">
+				<div class="darken"></div>
+				<video autoplay muted loop id="video" class="video">
+					<source src="images/background-clip.mp4" type="video/mp4">
 				</video>
-				<div class="business-title">
+				<div class="website-title">
 					<header>
-						Business Name
+						AniQuinch
 					</header>
 				</div>
 			</div>
 		</div>
 		<!-- -------Main Section------- -->
 		<div class="main-content-wrapper">
-			<div class="about-wrapper">
-				<h1 class="about-title" id="About">About</h1>
-				<p class="about-paragraph">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
-				</p>
+			<!-- -------About Section------- -->
+			<div class="about-margin">
+				<div class="about-wrapper">
+					<h1 class="about-title" id="About">About</h1>
+					<p class="about-paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facere?
+					</p>
+				</div>
 			</div>
+			<!-- -------Carousel Product Section------- -->
 			<div class="carousel-wrapper">
 				<div class="carousel-container">
 					<div class="carousel" id="carousel">
@@ -76,28 +85,31 @@
 						<img class="carousel-image3" id="carousel-image3" src="https://images8.alphacoders.com/119/thumb-1920-1190953.jpg" alt="image">
 						<img class="carousel-image4" id="carousel-image4" src="https://i0.wp.com/images4.alphacoders.com/112/thumb-1920-1126211.jpg" alt="image">
 					</div>
-					<div class="navigation">
+					<div class="navigation" style="z-index: 5;">
 						<img class="button1" id="button1" src="images/left-arrow.png" alt="left arrow">
 						<img class="button2" id="button2" src="images/right-arrow.png" alt="right arrow">
 					</div>
 				</div>
 			</div>
-			<div class="services-wrapper">
-				<h1 class="services-title" id="Services">Services</h1>
-				<p class="services-paragraph">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
-				</p>
+			<!-- -------Services Section------- -->
+			<div class="services-margin">
+				<div class="services-wrapper">
+					<h1 class="services-title" id="Services">Services</h1>
+					<p class="services-paragraph">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laudantium.
+					</p>
+				</div>
 			</div>
 		</div>
 		<!-- -------Footer Section------- -->
