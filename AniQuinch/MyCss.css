@@ -39,7 +39,7 @@ body
 	width: 100%;
 	position: fixed;
 	z-index: 990;
-	background-color: #1f1f1f;
+	background-color: #fd7094;
 	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 .navbar-margin
@@ -56,8 +56,8 @@ body
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 /* MENU */
@@ -158,9 +158,10 @@ body
 /* Website Title */
 .main-website-title
 {
-	color: white;
+	color: rgb(255, 255, 255);
 	font-size: 2rem;
 	font-style: oblique;
+	text-shadow: 2px 1px #000000;
 }
 /* -------Left Sidebar------- */
 .left-sidebar-wrapper
@@ -179,7 +180,7 @@ body
 {
 	display: flex;
 	flex-direction: column;
-	margin-top: 100px;
+	margin-top: 110px;
 }
 .sidebar-content-wrapper
 {
@@ -191,13 +192,13 @@ body
 	width: 2rem;
 	height: 2rem;
 	filter: invert();
-	margin-left: 3rem;
+	margin-left: 2rem;
 }
 .sidebar-button
 {
 	color: white;
 	padding: 1.5rem;
-	margin-left: 1rem
+	margin-left: .5rem
 }
 
 /* -------Header------- */
@@ -238,18 +239,18 @@ body
 		margin-bottom: 35rem;
 	}
 }
-header
+.title
 {
 	color: white;
-	font-size: 5rem;
+	font-size: 3rem;
 	font-weight: 900;
 	font-style: oblique;
 	font-stretch: ultra-condensed;
-	text-shadow: 8px 4px #000000;
+	text-shadow: 4px 2px #000000;
+	text-justify: auto;
 	padding-left: 5rem;
 	padding-right: 5rem;
 }
-
 /* -------Main------- */
 .main-content-wrapper
 {
@@ -381,7 +382,7 @@ justify-content: space-between;
 {
 	height: 100%;
 	width: 100%;
-	background-color: #1f1f1f;
+	background-color:#d84066;
 }
 
 .contacts-wrapper
@@ -390,5 +391,5 @@ justify-content: space-between;
 	justify-content: center;
 	padding-top: 8rem;
 	padding-bottom: 8rem;
-	color: white;
+	color: rgb(255, 255, 255);
 }
