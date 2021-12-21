@@ -320,7 +320,7 @@ body
 	width: 1600px;
 	height: 625px;
 	position: relative;
-	margin: 8% auto;
+	margin: 1% auto;
 	background: #ffe0fa;
 	padding: 20px;
 	overflow: auto;
@@ -331,14 +331,12 @@ body
 /* -------Footer------- */
 .footer-wrapper
 {
-	height: 380px;
-	width: 1640px;
+	height: 450px;
+	width: 100%;
 	background-color:#000000;
-	align-items: center;
 	position: absolute;
-	margin-top: -90px;
-	margin-bottom: 0%;
-	z-index: 1;
+	margin-top: 100px;
+	z-index: 10;
 }
 .contacts-wrapper
 {
@@ -429,13 +427,12 @@ body
 	width: 380px;
 	height: 20px;
 	position: relative;
-	margin-top: 7%;
-	margin-bottom: -90px;
-	padding: 5px;
+	margin: 5% 40%;
+	padding: 10px;
 	overflow: hidden;
 	z-index: 40;
 	background-color: white;
-	border-radius: 0 40% 40% 0;
+	border-radius: 10px
 }
 .breadcrumb-list
 {

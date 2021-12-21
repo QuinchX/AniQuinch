@@ -435,11 +435,11 @@
 /* -------Footer------- */
 .footer-wrapper
 {
-	height: 380px;
+	height: 450px;
 	width: 100%;
 	background-color:#000000;
 	position: absolute;
-	margin-top: 650px;
+	margin-top: 925px;
 	z-index: 10;
 }
 .contacts-wrapper
@@ -447,7 +447,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 3rem;
+	padding-top: 1rem;
 	color: rgb(255, 255, 255);
 }
 .footer-content
@@ -463,7 +463,7 @@
 	font-style: oblique;
 	font-weight: 900;
 	text-shadow: 2px 1px #ff0080;
-	padding: 2rem;
+	padding: 3rem;
 }
 .gmail
 {
@@ -473,7 +473,7 @@
 }
 .copyright
 {
-	padding: 2rem;
+	padding: 1rem;
 }
 .social-media-link
 {
@@ -531,12 +531,12 @@
 	width: 200px;
 	height: 20px;
 	position: relative;
-	margin: 7% 0;
-	padding: 5px;
+	margin: 5% 44.5%;
+	padding: 10px;
 	overflow: hidden;
 	z-index: 40;
 	background-color: white;
-	border-radius: 0 40% 40% 0;
+	border-radius: 10px
 }
 .breadcrumb-list
 {
