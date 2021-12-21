@@ -8,8 +8,6 @@
 
 body {
   background-color: #FFE5EC;
-  padding-left: 300px;
-  padding-right: 200px;
 }
 
 div.heading {

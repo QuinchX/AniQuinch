@@ -440,8 +440,7 @@
 	background-color:#000000;
 	position: absolute;
 	margin-top: 650px;
-	margin-bottom: 0%;
-	z-index: 1;
+	z-index: 10;
 }
 .contacts-wrapper
 {
