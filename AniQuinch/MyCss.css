@@ -393,7 +393,7 @@ body
 	display: flex;
 	flex-direction: row;
 	align-content: flex-start;
-	background: url(images/sakura-background.png);
+	background: url(./images/sakura-background.png);
 }
 .about-margin
 {
