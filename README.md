@@ -1,4 +1,4 @@
-# AniQuinch
+# AniQuinch Version 1
 
 **Website Link:** *https://quinchx.github.io/AniQuinch/*
 
