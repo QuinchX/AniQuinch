@@ -655,36 +655,48 @@ img
 }
 .services-margin
 {
-	margin-right: 20rem;
-	margin-left: 20rem;
+	margin-right: 15rem;
+	margin-left: 15rem;
 }
 .services
 {
 	margin-top: 10rem;
-	margin-bottom: 5rem;
+	margin-bottom: 7rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .services-title
 {
 	color: black;
 	font-weight: 900;
 	font-size: 5rem;
+	margin-bottom: 3rem;
 }
 .services-paragraph
 {
 	font-size: larger;
 	color: black;
-	line-height: 1.8rem;
+	line-height: 2rem;
+	text-align: justify;
+}
+.cards-fluid .cards>*
+{
+	width: 23%;
 }
 .cards
 {
 	margin-bottom: 15rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 .card1
 {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding: 3rem;
-	margin-bottom: 7rem;
 	border-radius: 15px;
 	background-color: rgb(77, 6, 47);
 	transition: .50s ease-in-out;
@@ -695,7 +707,7 @@ img
 	margin: 0%;
 	color: rgb(255, 255, 255);
 	font-weight: 900;
-	font-size: 3rem;
+	font-size: 2rem;
 	margin-bottom: 2rem;
 }
 .card1-paragraph
@@ -710,9 +722,8 @@ img
 {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	align-items: center;
 	padding: 3rem;
-	margin-bottom: 7rem;
 	border-radius: 15px;
 	background-color: rgb(77, 6, 47);
 	transition: .50s ease-in-out;
@@ -723,7 +734,7 @@ img
 	margin: 0%;
 	color: rgb(255, 255, 255);
 	font-weight: 900;
-	font-size: 3rem;
+	font-size: 2rem;
 	margin-bottom: 2rem;
 }
 .card2-paragraph
@@ -738,6 +749,7 @@ img
 {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding: 3rem;
 	border-radius: 15px;
 	background-color: rgb(77, 6, 47);
@@ -749,7 +761,7 @@ img
 	margin: 0%;
 	color: rgb(255, 255, 255);
 	font-weight: 900;
-	font-size: 3rem;
+	font-size: 2rem;
 	margin-bottom: 2rem;
 }
 .card3-paragraph
