@@ -329,16 +329,96 @@ body
 }
 
 /* -------Footer------- */
-.contact-wrapper
+.footer-wrapper
 {
-	position:absolute;
-	text-align: center;
-	height: 15px;
-	width: 100%;
-	bottom: 0;
-	left: 0;
-	color: white;
-	padding-top: 15px;
-	padding-bottom: 10px;
-	background-color: #fd7094;	
+	height: 380px;
+	width: 1640px;
+	background-color:#000000;
+	align-items: center;
+	position: absolute;
+	margin-top: -90px;
+	margin-bottom: 0%;
+	z-index: 1;
+}
+.contacts-wrapper
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 3rem;
+	color: rgb(255, 255, 255);
+}
+.footer-content
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.title-footer
+{
+	color: rgb(255, 255, 255);
+	font-size: 2rem;
+	font-style: oblique;
+	font-weight: 900;
+	text-shadow: 2px 1px #ff0080;
+	padding: 2rem;
+}
+.gmail
+{
+	text-decoration: underline;
+	font-style: oblique;
+	cursor: pointer;
+}
+.copyright
+{
+	padding: 2rem;
+}
+.social-media-link
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.social-media1
+{
+	width: 3rem;
+	height: 3rem;
+	filter: invert();
+	padding: 2rem;
+	cursor: pointer;
+	transition: .25s ease-in-out;
+}
+.social-media2
+{
+	width: 3rem;
+	height: 3rem;
+	filter: invert();
+	padding: 2rem;
+	cursor: pointer;
+	transition: .25s ease-in-out;
+}
+.social-media3
+{
+	width: 3rem;
+	height: 3rem;
+	filter: invert();
+	padding: 2rem;
+	cursor: pointer;
+	transition: .25s ease-in-out;
+}
+.social-media1:hover
+{
+	width: 3.5rem;
+	height: 3.5rem;
+}
+.social-media2:hover
+{
+	width: 3.5rem;
+	height: 3.5rem;
+}
+.social-media3:hover
+{
+	width: 3.5rem;
+	height: 3.5rem;
 }
