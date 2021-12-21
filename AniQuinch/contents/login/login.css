@@ -525,3 +525,45 @@
 	width: 3.5rem;
 	height: 3.5rem;
 }
+
+/* -------Breadcrumb------- */
+.breadcrumb-container
+{
+	width: 200px;
+	height: 20px;
+	position: relative;
+	margin: 7% 0;
+	padding: 5px;
+	overflow: hidden;
+	z-index: 40;
+	background-color: white;
+	border-radius: 0 40% 40% 0;
+}
+.breadcrumb-list
+{
+	padding: 0;
+}
+.breadcrumb
+{
+	display: inline-block;
+}
+.breadcrumb:not(:last-of-type)::after
+{
+	content: '\203a';
+	margin: 0 5px;
+	color: #cccccc;
+}
+.breadcrumb-link
+{
+	text-decoration: none;
+	color: #999999;
+}
+.breadcrumb-link:hover
+{
+	text-decoration: underline;
+}
+.breadcrumb-link--active
+{
+	color: #ff69ed;
+	font-weight: 500;
+}
