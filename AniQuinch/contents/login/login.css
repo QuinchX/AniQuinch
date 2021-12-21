@@ -153,9 +153,10 @@
 /* Website Title */
 .main-website-title
 {
-	color: white;
+	color: rgb(255, 255, 255);
 	font-size: 2rem;
 	font-style: oblique;
+	text-shadow: 2px 1px #000000;
 }
 /* -------Left Sidebar------- */
 .left-sidebar-wrapper
