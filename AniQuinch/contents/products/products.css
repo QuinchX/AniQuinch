@@ -251,3 +251,12 @@ body
 	cursor: pointer;
 	max-width: 2rem;
 }
+div.Clothing
+{
+	width: 384px;
+	height: 385px;
+	position: fixed;
+	margin: 5px;
+	border: 5px solid #ccc;
+	
+}
