@@ -90,7 +90,8 @@ body
 	border-radius: 69px;
 	margin: 5px;
 	transition: width .25s ease-out;
-	.menu:hover .line1
+}
+.menu:hover .line1
 {
 	width: 25px;
 	border-radius: 69px;
