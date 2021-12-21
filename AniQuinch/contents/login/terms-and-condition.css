@@ -312,11 +312,23 @@
 	padding: 1.5rem;
 	margin-left: .5rem
 }
+.form-box
+{
+	width: 1600px;
+	height: 625px;
+	position: relative;
+	margin: 8% auto;
+	background: #ffe0fa;
+	padding: 20px;
+	overflow: auto;
+	border-radius: 30px;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
 
 /* -------Footer------- */
 .contact-wrapper
 {
-	position: absolute;
+	position:absolute;
 	text-align: center;
 	height: 15px;
 	width: 100%;
