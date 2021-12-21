@@ -8,7 +8,10 @@
 ::-webkit-scrollbar {
     display: none;
 }
-
+body
+{
+	background-color: #ffe3f2;
+}
 /* -------Navigation Bar------- */
 .container
 {
