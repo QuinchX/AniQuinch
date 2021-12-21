@@ -1,14 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href = "login.css">
-    <link rel="icon" type="image" href="https://cdn-icons-png.flaticon.com/512/2362/2362719.png">
-    <title>AniQuinch - Account Login In</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  href = "login.css">
+		<link rel="icon" type="image" href="https://cdn-icons-png.flaticon.com/512/2362/2362719.png">
+		<title>AniQuinch - Account Login In</title>
+	</head>
+	<body>
+		<!-- -------Navbar------- -->
+		<div class="container">
+			<nav class="navigation-container">
+				<div class="navbar-margin">
+					<div class="navbar-container">
+						<div class="menu" id="menu">
+							<div class="line1"></div>
+							<div class="line2"></div>
+							<div class="line3"></div>
+						</div>
+						<div class="links">
+							<a class="links-button" href = "../../index.html">Home</a>
+							<h1 class="main-website-title">AniQuinch</h1>
+							<a class="links-button" href = "../products/products.html" target="_blank"> Products</a>
+						</div>
+						<div class="cart">
+							<img src="images/shopping-cart.png" alt="cart" class="cart-icon">
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="sidebar-container" id="sidebar-container">
+				<div class="sidebar-wrapper">
+					<div class="sidebar-content-wrapper">
+						<img src="images/home.png" alt="" class="sidebar-icon">
+						<a class="sidebar-button" href="/index.html"> Home </a>
+					</div>
+					<div class="sidebar-content-wrapper">
+						<img src="images/about.png" alt="" class="sidebar-icon">
+						<a class="sidebar-button" href="/index.html#About"> About </a>
+					</div>
+					<div class="sidebar-content-wrapper">
+						<img src="images/services.png" alt="" class="sidebar-icon">
+						<a class="sidebar-button" href="/index.html#Services"> Services </a>
+					</div>
+					<div class="sidebar-content-wrapper">
+						<img src="images/contact.png" alt="" class="sidebar-icon">
+						<a class="sidebar-button" href="/index.html#Contacts"> Contacts </a>
+					</div>
+					<div class="sidebar-content-wrapper">
+						<img src="images/product.png" alt="" class="sidebar-icon">
+						<a class="sidebar-button" href="/AniQuinch/contents/products/products.html" target="_blank"> Products </a>
+					</div>
+					<div class="sidebar-content-wrapper">
+						<img src="images/login.png" alt="" class="sidebar-icon">
+						<a class="sidebar-button" href="login.html"> Login </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- -------Login------- -->
+		<div class="login">
+			<div class="form-box">
+				<div class="button-box">
+					<div id="login-button"></div>
+					<button type="button" class="toggle-button" onclick="login()">Log In</button>
+					<button type="button" class="toggle-button" onclick="register()">Register</button>
+				</div>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/" target="popup" onclick="window.open('https://www.facebook.com/','popup','width=600,height=600'); return false;">
+						<img src="images/fb-icon.png"></a>
+					<a href="https://accounts.google.com/servicelogin" target="popup" onclick="window.open('https://accounts.google.com/servicelogin','popup','width=600,height=600'); return false;">
+						<img src="images/google-icon.png"></a>
+					<a href="https://twitter.com/login?lang=en" target="popup" onclick="window.open('https://twitter.com/login?lang=en','popup','width=600,height=600'); return false;">
+						<img src="images/twitter-icon.png"></a>
+				</div>
+				<form id="login" class="input-form">
+					<input type="text" class="input-area" placeholder="Username" oninvalid="alert('You must fill out the form!');" required>
+					<input type="password" class="input-area" id="password1" placeholder="Enter Password" oninvalid="alert('You must fill out the form!');" required>
+					<div class="reset-password">
+						<a href="reset-password.html" 
+							target="popup" onclick="window.open('reset-password.html','popup','width=600,height=600'); return false;">
+							Forgot Password?
+						</a>
+					</div>
+					<div class="check-boxstyle">
+						<input type="checkbox" class="check-box" onchange="document.getElementById('password1').type = this.checked ? 'text' : 'password'">Show Password
+						<br>
+						<input type="checkbox" class="check-box">Remember Password
+					</div>
+					<button type="submit" class="submit-button">Log In</button>
+				</form>
+				<form id="register" class="input-form">
+					<input type="text" class="input-area" placeholder="Username" oninvalid="alert('You must fill out the form!');" required>
+					<input type="email" class="input-area" placeholder="Email Address" oninvalid="alert('You must fill out the form!');" required>
+					<input type="password" class="input-area" id="password2" placeholder="Enter Password" oninvalid="alert('You must fill out the form!');" required>
+					<div class="check-boxstyle">
+						<input type="checkbox" class="check-box" onchange="document.getElementById('password2').type = this.checked ? 'text' : 'password'">Show Password
+						<br>
+						<input type="checkbox" class="check-box" oninvalid="alert('You must agree to the terms & conditions!');" required>I agree to the 
+						<a href="terms-and-condition.html" target="_blank">terms</a> & <a href="terms-and-condition.html" target="_blank">conditions</a>
+					</div>
+					<button type="submit" class="submit-button">Register</button>
+				</form>
+			</div>
+		</div>
+		<!-- -------Footer Section------- -->
+		<div class="footer-wrapper" id="Contacts">
+			<footer class="contact-wrapper">
+				&#169;2021-2021 | AniQuinch.com, Inc. and Other Affiliates
+			</footer>
+		</div>
+	</body>
+	<script src="login.js"></script>
 </html>
