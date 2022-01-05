@@ -8,7 +8,10 @@
 ::-webkit-scrollbar {
     display: none;
 }
-
+body
+{
+	background-color: rgb(255, 203, 220);
+}
 /* -------Navigation Bar------- */
 .container
 {
@@ -34,7 +37,7 @@
 	width: 100%;
 	position: fixed;
 	z-index: 990;
-	background-color: #fd7094;
+	background-color: #ff3c6d;
 	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 .navbar-margin
@@ -114,7 +117,6 @@
 	color: white;
 	display: inline-block;
 	position: relative;
-	font-weight: lighter;
 }
 
 .links-button::after
@@ -312,142 +314,41 @@
 	padding: 1.5rem;
 	margin-left: .5rem
 }
-/* -------Login------- */
 .login
 {
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/background.jpg);
-	background-position: center;
-	background-size: cover;
-	position: absolute;
-	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .form-box
 {
-	width: 380px;
-	height: 480px;
+	width: 1600px;
+	height: 645px;
 	position: relative;
-	margin: 8% auto;
-	background: #fff;
-	padding: 5px;
-	overflow: hidden;
+	background: #ffffff;
+	padding: 20px;
+	overflow: auto;
 	border-radius: 30px;
-}
-.button-box
-{
-	width: 220px;
-	margin: 35px auto;
-	position: relative;
-	box-shadow: 0 0 20px 9px #ff61241f;
-	border-radius: 30px;
-}
-.toggle-button
-{
-	padding: 10px 30px;
-	cursor: pointer;
-	background: transparent;
-	border: 0;
-	outline: none;
-	position: relative;
-	
-}
-#login-button
-{
-	top: 0;
-	left: 0;
-	position: absolute;
-	width: 110px;
-	height: 100%;
-	background: linear-gradient(to right, #ffabf9, #ffba82);
-	border-radius: 30px;
-	transition: .5s;
-}
-.social-icons
-{
-	margin: 30px auto;
-	text-align: center;
-}
-.social-icons img
-{
-	width: 30px;
-	margin: 0 12px;
-	box-shadow: 0 0 20px 0 #7f7f7f3d;
-	cursor: pointer;
-	border-radius: 50%;
-}
-.input-form
-{
-	top: 180px;
-	position: absolute;
-	width: 280px;
-	transition: .5s;
-}
-.input-area
-{
-	width: 100%;
-	padding: 10px 0;
-	margin: 5px 0;
-	border-top: 0;
-	border-right: 0;
-	border-left: 0;
-	border-bottom: 1px solid #999;
-	outline: none;
-	background: transparent;
-}
-.submit-button
-{
-	width: 85%;
-	padding: 10px 30px;
-	cursor: pointer;
-	display: block;
-	margin: 15px 0 0 28px;
-	background: linear-gradient(to right, #ffabf9, #ffba82);
-	border: 0;
-	outline: none;
-	border-radius: 30px;
-}
-.reset-password
-{
-	padding: 5x 0;
-	font-size: 12px;
-	cursor: pointer;
-}
-.check-box
-{
-	margin-top: 12px;
-	margin-bottom: 5px;
-}
-.check-boxstyle
-{
-	color: #777;
-	font-size: 14px;
-}
-#login
-{
-	left: 50px;
-}
-#register
-{
-	left: 450px;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* -------Footer------- */
 .footer-wrapper
 {
-	height: 450px;
+	height: 405px;
 	width: 100%;
 	background-color:#000000;
 	position: absolute;
-	margin-top: 925px;
-	z-index: 10;
+	margin-top: 100px;
 }
 .contacts-wrapper
 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 1rem;
+	padding-top: 3rem;
 	color: rgb(255, 255, 255);
 }
 .footer-content
@@ -463,7 +364,7 @@
 	font-style: oblique;
 	font-weight: 900;
 	text-shadow: 2px 1px #ff0080;
-	padding: 3rem;
+	padding: 2rem;
 }
 .gmail
 {
@@ -473,7 +374,7 @@
 }
 .copyright
 {
-	padding: 1rem;
+	padding: 2rem;
 }
 .social-media-link
 {
@@ -528,15 +429,17 @@
 /* -------Breadcrumb------- */
 .breadcrumb-container
 {
-	width: 200px;
-	height: 20px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	position: relative;
-	margin: 5% 44.5%;
+	margin-top: 8rem;
+	margin-bottom: 2rem;
 	padding: 10px;
-	overflow: hidden;
 	z-index: 40;
 	background-color: white;
-	border-radius: 10px
+	border-radius: 20px
 }
 .breadcrumb-list
 {

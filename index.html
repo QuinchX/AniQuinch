@@ -1,197 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- links, meta, and title -->
-		<link rel="stylesheet"  href = "AniQuinch/MyCss.css">
+		<!-- links and meta tags -->
+		<link rel="stylesheet"  href = "MyCss.css">
 		<link rel="icon" type="image" href="https://cdn-icons-png.flaticon.com/512/2362/2362719.png">
 		<meta name="google-site-verification" content="dNX19pb4UA6GI1Xxx-s1rZMBbdEkbliygSPAAtsEG7E" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
 		<title> AniQuinch </title>
 	</head>
-
 	<body>
-		<!-- -------Navbar------- -->
-		<div class="container">
-			<nav class="navigation-container">
-				<div class="navbar-margin">
-					<div class="navbar-container">
-						<div class="menu" id="menu">
-							<div class="menu-wrapper">
-								<div class="line1"></div>
-								<div class="line2"></div>
-								<div class="line3"></div>
+		<!-- -------Whole Content Wrapper------- -->
+		<div class="main-wrapper">
+			<!-- -------Navigation Bar------- -->
+			<div class="container">
+				<nav class="navigation-container">
+					<div class="navbar-margin">
+						<div class="navbar-container">
+							<div class="menu" id="menu">
+								<div class="menu-wrapper">
+									<div class="line1"></div>
+									<div class="line2"></div>
+									<div class="line3"></div>
+									<!-- -------SideBar------- -->
+									<div class="sidebar-container" id="sidebar-container">
+										<div class="sidebar-wrapper">
+											<div class="sidebar-content-home">
+												<img src="AniQuinch/images/home.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="#Home"> Home </a>
+											</div>
+											<div class="sidebar-content-about">
+												<img src="AniQuinch/images/about.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="AniQuinch/contents/about/about.html" target="_blank"> About </a>
+											</div>
+											<div class="sidebar-content-services">
+												<img src="AniQuinch/images/services.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="AniQuinch/contents/services/services.html" target="_blank"> Services </a>
+											</div>
+											<div class="sidebar-content-contacts">
+												<img src="AniQuinch/images/contact.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="#Contacts"> Contacts </a>
+											</div>
+											<div class="sidebar-content-product">
+												<img src="AniQuinch/images/product.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="AniQuinch/contents/products/products.html" target="_blank"> Products </a>
+											</div>
+											<div class="sidebar-content-register">
+												<img src="AniQuinch/images/register.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="AniQuinch/contents/register/register.html" target="_blank"> Register </a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="links">
+								<a class="links-button" href = "index.html">Home</a>
+								<h1 class="main-website-title">AniQuinch</h1>
+								<a class="links-button" href = "AniQuinch/contents/products/products.html" target="_blank"> Products</a>
+							</div>
+							<div class="register">
+								<a class="register-button" href = "AniQuinch/contents/register/register.html" target="_blank">Register</a>
 							</div>
 						</div>
-						<div class="links">
-							<a class="links-button" href = "index.html">Home</a>
-							<h1 class="main-website-title">AniQuinch</h1>
-							<a class="links-button" href = "AniQuinch/contents/products/products.html" target="_blank"> Products</a>
-						</div>
-						<div class="login">
-							<a class="login-button" href = "AniQuinch/contents/login/login.html" target="_blank">Login</a>
-						</div>
 					</div>
-				</div>
-			</nav>
-			<div class="sidebar-container" id="sidebar-container">
-				<div class="sidebar-wrapper">
-					<div class="sidebar-content-home">
-						<img src="AniQuinch/images/home.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="#Home"> Home </a>
-					</div>
-					<div class="sidebar-content-about">
-						<img src="AniQuinch/images/about.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="#About"> About </a>
-					</div>
-					<div class="sidebar-content-services">
-						<img src="AniQuinch/images/services.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="#Services"> Services </a>
-					</div>
-					<div class="sidebar-content-contacts">
-						<img src="AniQuinch/images/contact.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="#Contacts"> Contacts </a>
-					</div>
-					<div class="sidebar-content-product">
-						<img src="AniQuinch/images/product.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="AniQuinch/contents/products/products.html" target="_blank"> Products </a>
-					</div>
-					<div class="sidebar-content-login">
-						<img src="AniQuinch/images/login.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="AniQuinch/contents/login/login.html" target="_blank"> Login </a>
-					</div>
+				</nav>
+				<!-- -------Breadcrumb------- -->
+				<div class="breadcrumb-container">
+					<ul class="breadcrumb-list">
+						<li class="breadcrumb">
+							<a href="../../../index.html" class="breadcrumb-link">Home</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</div>
-		<!-- -------Header------- -->
-		<div class="header-content-wrapper">
-			<div class="header-container" id="Home">
-				<div class="darken"></div>
-				<video autoplay muted loop id="video" class="video">
-					<source src="AniQuinch/images/background-clip.mp4" type="video/mp4">
-				</video>
-				<div class="website-title">
-					<header class="title">
-						Buy anime figurines, mangas, accessories and more!
-					</header>
-				</div>
+			<!-- -------Video Background------- -->
+			<div class="darken"></div>
+			<video autoplay muted loop id="video" class="video">
+				<source src="AniQuinch/images/background-clip.mp4" type="video/mp4">
+			</video>
+			<!-- -------Footer------- -->
+			<div class="footer-wrapper" id="Contacts">
+				<footer class="contacts-wrapper">
+					<div class="footer-content">
+						<p class="title-footer">AniQuinch</p>
+						<p class="gmail">aniquinch@gmail.com</p>
+						<p class="copyright">©2021-2021 | AniQuinch.com, Inc. and Other Affiliates · All rights reserved.</p>
+					</div>
+					<div class="social-media-link">
+						<img class="social-media1" src="AniQuinch/images/facebook.png" alt="">
+						<img class="social-media2" src="AniQuinch/images/twitter.png" alt="">
+						<img class="social-media3" src="AniQuinch/images/instagram.png" alt="">
+					</div>
+				</footer>
 			</div>
-		</div>
-		<!-- -------Main Section------- -->
-		<div class="main-content-wrapper">
-			<!-- -------About Section------- -->
-			<div class="about-wrapper" id="About">
-				<div class="about-margin">
-					<div class="about">
-						<h1 class="about-title">About us</h1>
-						<p class="about-paragraph">
-							AniQuinch is a shopping website dedicated for selling Anime-related merchandises.
-							We offer different types of Anime merchandise, such as mangas, figurines, mousepads, and many more.
-							Our site is approved by the government law, and all transactions are legal and security of products and personal
-							information are assured. The site offers refund, if the issues come from our side, due to delivery delay, damage during delivery, 
-							and other issues relating to the process of transaction that results from using our site. We have trustworthy 
-							sellers from all around the globe, ranging not only from Japan and US, there are also from China, Malaysia, Australia, and other countries. 
-							AniQuinch is the finest option for purchasing anime merchandise; we are professional that enjoy giving all of you anime lovers the greatest experience possible.
-						</p>
+			<!-- -------Main Page Contents------- -->
+			<div class="header-content-wrapper">
+				<div class="header-container" id="Home">
+					<div class="website-title">
+						<p class="title">Buy anime figurines, clothings,<br>body pillows and more<br>in AniQuinch!</p>
 					</div>
-					<div class="about-images">
-						<div class="image1">
-							<img class="about-images1" src="https://pbs.twimg.com/media/EZnOcU1U0AEcSPY?format=jpg&name=large" alt="">
-							<p class="image1-description">Mangas</p>
-						</div>
-						<div class="image2">
-							<img class="about-images2" src="https://cdna.artstation.com/p/assets/images/images/034/530/488/large/kaoru-sakaki-mona2-354.jpg" alt="">
-							<p class="image2-description">Figurines</p>
-						</div>
-						<div class="image3">
-							<img class="about-images3" src="https://cdn.shopify.com/s/files/1/0264/4584/0442/products/XL-Anime-Kimetsu-no-Yaiba-Pad-Mouse-HD-Print-Computer-Gamer-Locking-Edge-Mousepad-XXL-Keyboard_1c6546ee-ebe1-40dd-8af9-eadfbdaffb97_800x.jpg?v=1599131772" alt="">
-							<p class="image3-description">Mousepads</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- -------Carousel Product Section------- -->
-			<div class="carousel-wrapper">
-				<div class="carousel-container">
-					<div class="carousel-title">
-						<h3 class="featured-title" >FEATURED PRODUCTS</h3>
-					</div>
-					<div class="carousel" id="carousel">
-						<img class="carousel-image1" id="carousel-image1" src="AniQuinch/images/makima-clothing.png" alt="image">
-						<img class="carousel-image2" id="carousel-image2" src="AniQuinch/images/itadori-figurine.png" alt="image">
-						<img class="carousel-image3" id="carousel-image3" src="AniQuinch/images/sakamoto-days.png" alt="image">
-						<img class="carousel-image4" id="carousel-image4" src="AniQuinch/images/mushoku-case.png" alt="image">
-					</div>
-					<div class="navigation" style="z-index: 5;">
-						<img class="button1" id="button1" src="AniQuinch/images/left-arrow.png" alt="left arrow">
-						<img class="button2" id="button2" src="AniQuinch/images/right-arrow.png" alt="right arrow">
-					</div>
-					<div class="carousel-title">
-						<a class="featured-product" href="AniQuinch/contents/products/products.html" target="_blank"><p class="featured-text">VIEW PRODUCTS</p></a>
-					</div>
-				</div>
-			</div>
-			<!-- -------Services Section------- -->
-			<div class="services-wrapper" id="Services">
-				<div class="services-margin">
-					<div class="services">
-						<h1 class="services-title">Services</h1>
-						<p class="services-paragraph">
-							Our customer service is available at all times, and our team responds within 24 hours. 
-							This site is free to use, with just a few premium capabilities available, such as free shipping cost, 
-							but the main functions that customers use, such as sorting products by price, reviews, and buck-order, 
-							are available for free. During the holidays, we regularly offer several events that are open to the public. 
-							These events include product freebies, special edition goods, and the possibility to win cash for every purchase 
-							made during the event.
-						</p>
-					</div>
-					<div class="cards-fluid">
-						<div class="cards">
-							<div class="card1">
-								<h1 class="card1-title">Premium Account</h1>
-								<p class="card1-paragraph">
-									AniQuinch provides a premium account service that allows users access to features 
-									such as no delivery cost when purchasing products. A premium account cost user for 10$ per month
-									but in return, gives user access to customizable profile, lesser ads and much more. Premium users 
-									also get the first access to new items and a reserved spot in limited edition merchandise.
-								</p>
+					<!-- -------Carousel Product Section------- -->
+					<div class="carousel-wrapper">
+						<div class="carousel-container">
+							<div class="carousel-title">
+								<h3 class="featured-title" >FEATURED PRODUCTS</h3>
 							</div>
-							<div class="card2">
-								<h1 class="card2-title">Holiday Events</h1>
-								<p class="card2-paragraph">
-									AniQuinch hosts a limited-time event for each holiday, giving users the opportunity to obtain 
-									special merchandise for that occasion. Every user, whether premium or not, has access to the 
-									event and additional incentives. There is also an event for every anniversary of the website.
-								</p>
+							<div class="carousel" id="carousel">
+								<img class="carousel-image1" id="carousel-image1" src="AniQuinch/images/makima-clothing.png" alt="image">
+								<img class="carousel-image2" id="carousel-image2" src="AniQuinch/images/itadori-figurine.png" alt="image">
+								<img class="carousel-image3" id="carousel-image3" src="AniQuinch/images/sakamoto-days.png" alt="image">
+								<img class="carousel-image4" id="carousel-image4" src="AniQuinch/images/mushoku-case.png" alt="image">
 							</div>
-							<div class="card3">
-								<h1 class="card3-title">Discount and Sales</h1>
-								<p class="card3-paragraph">
-									AniQuinch is your budget-friendly shopping site; at the beginning and end of each month, 
-									all products on the site will be discounted. Discounts from events are stacked to the beginning 
-									and end of the month sales, so if a holiday falls at the beginning or end of the month, there will be a 
-									significant discount for those goods.
-								</p>
+							<div class="navigation" style="z-index: 5;">
+								<img class="button1" id="button1" src="AniQuinch/images/left-arrow.png" alt="left arrow">
+								<img class="button2" id="button2" src="AniQuinch/images/right-arrow.png" alt="right arrow">
+							</div>
+							<div class="carousel-title">
+								<a class="featured-product" href="AniQuinch/contents/products/products.html" target="_blank"><p class="featured-text">VIEW PRODUCTS</p></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- -------Footer Section------- -->
-		<div class="footer-wrapper" id="Contacts">
-			<footer class="contacts-wrapper">
-				<div class="footer-content">
-					<p class="title-footer">AniQuinch</p>
-					<p class="gmail">aniquinch@gmail.com</p>
-					<p class="copyright">©2021-2021 | AniQuinch.com, Inc. and Other Affiliates · All rights reserved.</p>
+			<!-- -------Main Section------- 
+			<div class="main-content-wrapper">-->
+				<!-- -------About Section------- 
+				<div class="about-wrapper" id="About">
+					<div class="about-margin">
+						<div class="about">
+							<h1 class="about-title">About us</h1>
+							<p class="about-paragraph">
+								AniQuinch is a shopping website dedicated for selling Anime-related merchandises.
+								We offer different types of Anime merchandise, such as mangas, figurines, mousepads, and many more.
+								Our site is approved by the government law, and all transactions are legal and security of products and personal
+								information are assured. The site offers refund, if the issues come from our side, due to delivery delay, damage during delivery, 
+								and other issues relating to the process of transaction that results from using our site. We have trustworthy 
+								sellers from all around the globe, ranging not only from Japan and US, there are also from China, Malaysia, Australia, and other countries. 
+								AniQuinch is the finest option for purchasing anime merchandise; we are professional that enjoy giving all of you anime lovers the greatest experience possible.
+							</p>
+						</div>
+						<div class="about-images">
+							<div class="image1">
+								<img class="about-images1" src="https://pbs.twimg.com/media/EZnOcU1U0AEcSPY?format=jpg&name=large" alt="">
+								<p class="image1-description">Mangas</p>
+							</div>
+							<div class="image2">
+								<img class="about-images2" src="https://cdna.artstation.com/p/assets/images/images/034/530/488/large/kaoru-sakaki-mona2-354.jpg" alt="">
+								<p class="image2-description">Figurines</p>
+							</div>
+							<div class="image3">
+								<img class="about-images3" src="https://cdn.shopify.com/s/files/1/0264/4584/0442/products/XL-Anime-Kimetsu-no-Yaiba-Pad-Mouse-HD-Print-Computer-Gamer-Locking-Edge-Mousepad-XXL-Keyboard_1c6546ee-ebe1-40dd-8af9-eadfbdaffb97_800x.jpg?v=1599131772" alt="">
+								<p class="image3-description">Mousepads</p>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!-- -------Services Section-------
+				<div class="services-wrapper" id="Services">
+					<div class="services-margin">
+						<div class="services">
+							<h1 class="services-title">Services</h1>
+							<p class="services-paragraph">
+								Our customer service is available at all times, and our team responds within 24 hours. 
+								This site is free to use, with just a few premium capabilities available, such as free shipping cost, 
+								but the main functions that customers use, such as sorting products by price, reviews, and buck-order, 
+								are available for free. During the holidays, we regularly offer several events that are open to the public. 
+								These events include product freebies, special edition goods, and the possibility to win cash for every purchase 
+								made during the event.
+							</p>
+						</div>
+						<div class="cards-fluid">
+							<div class="cards">
+								<div class="card1">
+									<h1 class="card1-title">Premium Account</h1>
+									<p class="card1-paragraph">
+										AniQuinch provides a premium account service that allows users access to features 
+										such as no delivery cost when purchasing products. A premium account cost user for 10$ per month
+										but in return, gives user access to customizable profile, lesser ads and much more. Premium users 
+										also get the first access to new items and a reserved spot in limited edition merchandise.
+									</p>
+								</div>
+								<div class="card2">
+									<h1 class="card2-title">Holiday Events</h1>
+									<p class="card2-paragraph">
+										AniQuinch hosts a limited-time event for each holiday, giving users the opportunity to obtain 
+										special merchandise for that occasion. Every user, whether premium or not, has access to the 
+										event and additional incentives. There is also an event for every anniversary of the website.
+									</p>
+								</div>
+								<div class="card3">
+									<h1 class="card3-title">Discount and Sales</h1>
+									<p class="card3-paragraph">
+										AniQuinch is your budget-friendly shopping site; at the beginning and end of each month, 
+										all products on the site will be discounted. Discounts from events are stacked to the beginning 
+										and end of the month sales, so if a holiday falls at the beginning or end of the month, there will be a 
+										significant discount for those goods.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="social-media-link">
-					<img class="social-media1" src="AniQuinch/images/facebook.png" alt="">
-					<img class="social-media2" src="AniQuinch/images/twitter.png" alt="">
-					<img class="social-media3" src="AniQuinch/images/instagram.png" alt="">
-				</div>
-			</footer>
+			</div> -->
 		</div>
 	</body>
-	<script src="AniQuinch/script.js"></script>
+	<script src="script.js"></script>
 </html>
