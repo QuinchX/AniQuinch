@@ -10,11 +10,11 @@ btn1.addEventListener('click', function(){
     if(counter <= 0) return;
     carousel.style.transition = "transform 1s ease-in-out";
     counter--;
-    carousel.style.transform = 'translateX(' + (-640 * counter) + 'px)';
+    carousel.style.transform = 'translateX(' + (-800 * counter) + 'px)';
 });
 btn2.addEventListener('click', function(){
     if(counter >= images.length - 1) return;
     carousel.style.transition = "transform 1s ease-in-out";
     counter++;
-    carousel.style.transform = 'translateX(' + (-640 * counter) + 'px)';
+    carousel.style.transform = 'translateX(' + (-800 * counter) + 'px)';
 });
