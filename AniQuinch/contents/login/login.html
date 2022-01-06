@@ -4,12 +4,12 @@
 			<meta charset="UTF-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="stylesheet"  href = "register.css">
+			<link rel="stylesheet"  href = "login.css">
 			<link rel="icon" type="image" href="https://cdn-icons-png.flaticon.com/512/2362/2362719.png">
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-			<title>AniQuinch - Register</title>
+			<title>AniQuinch - Log In</title>
 	</head>
 	<body>
 		<!-- -------Whole Content Wrapper------- -->
@@ -28,27 +28,27 @@
 									<div class="sidebar-container" id="sidebar-container">
 										<div class="sidebar-wrapper">
 											<div class="sidebar-content-home">
-												<img src="images/home.png" alt="" class="sidebar-icon">
+												<img src="../register/images/home.png" alt="" class="sidebar-icon">
 												<a class="sidebar-button" href="../../../index.html"> Home </a>
 											</div>
 											<div class="sidebar-content-about">
-												<img src="images/about.png" alt="" class="sidebar-icon">
+												<img src="../register/images/about.png" alt="" class="sidebar-icon">
 												<a class="sidebar-button" href="../about/about.html"> About </a>
 											</div>
 											<div class="sidebar-content-services">
-												<img src="images/services.png" alt="" class="sidebar-icon">
+												<img src="../register/images/services.png" alt="" class="sidebar-icon">
 												<a class="sidebar-button" href="../services/services.html"> Services </a>
 											</div>
 											<div class="sidebar-content-contacts">
-												<img src="images/contact.png" alt="" class="sidebar-icon">
+												<img src="../register/images/contact.png" alt="" class="sidebar-icon">
 												<a class="sidebar-button" href="#Contacts"> Contacts </a>
 											</div>
 											<div class="sidebar-content-product">
-												<img src="images/product.png" alt="" class="sidebar-icon">
+												<img src="../register/images/product.png" alt="" class="sidebar-icon">
 												<a class="sidebar-button" href="../products/products.html"> Products </a>
 											</div>
 											<div class="sidebar-content-register">
-												<img src="images/login.png" alt="" class="sidebar-icon">
+												<img src="../register/images/login.png" alt="" class="sidebar-icon">
 												<a class="sidebar-button" href="../register/register.html"> Register </a>
 											</div>
 										</div>
@@ -61,7 +61,7 @@
 								<a class="links-button" href = "../products/products.html"> Products</a>
 							</div>
 							<div class="register">
-								<a class="register-button" href = "../login/login.html">Login</a>
+								<a class="register-button" href = "../register/register.html">Register</a>
 							</div>
 						</div>
 					</div>
@@ -73,7 +73,10 @@
 							<a href="../../../index.html" class="breadcrumb-link">Home</a>
 						</li>
 						<li class="breadcrumb">
-							<a href="products.html" class="breadcrumb-link breadcrumb-link--active">Register</a>
+							<a href="../register/register.html" class="breadcrumb-link breadcrumb-link">Register</a>
+						</li>
+						<li class="breadcrumb">
+							<a href="login.html" class="breadcrumb-link breadcrumb-link--active">Login</a>
 						</li>
 					</ul>
 				</div>
@@ -81,7 +84,7 @@
 			<!-- -------Background------- -->
 			<div class="background"></div>
 			<div class="bg-image">
-				<img src="images/background.jpg" alt="">
+				<img src="../register/images/background.jpg" alt="">
 			</div>
 			<!-- -------Footer------- -->
 			<div class="footer-wrapper" id="Contacts">
@@ -105,72 +108,75 @@
 					<div class="form-box">
 						<div class="title-box">							
 							<div class="title">
-								<h3>REGISTER</h3>
+								<h3>Log In</h3>
 							</div>
 						</div>
 						<form id="register" class="input-form">
 							<input type="text" class="input-area" placeholder="Username">
-							<input type="email" class="input-area" placeholder="Email Address">
 							<input type="password" class="input-area" placeholder="Enter Password">
-							<input type="password" class="input-area" placeholder="Re-enter Password">
 							<div class="check-boxstyle">
-								<input type="checkbox" class="check-box">Remember Password
+								<input type="checkbox" class="check-box">Remember Username
 								<br>
-								<input type="checkbox" class="check-box">I agree to the 
-								<a href="../terms-and-conditions/terms-and-conditions.html">terms</a> & 
-								<a href="../terms-and-conditions/terms-and-conditions.html">conditions</a>
+								<input type="checkbox" class="check-box">Remember Password
 							</div>
-							<a href = "../login/login.html" class="submit-button">Register</a>
+							<a href = "../products/products.html" class="submit-button">Log In</a>
 						</form>
 						<div class="media-register">
-							<h6>or Register using the following Media</h6>
+							<h6>or Log In using the following Media</h6>
 						</div>
 						<div class="social-icons">
 							<a href="https://www.facebook.com/" target="popup" onclick="window.open('https://www.facebook.com/','popup','width=600,height=600'); return false;">
-								<img src="images/fb-icon.png"></a>
+								<img src="../register/images/fb-icon.png"></a>
 							<a href="https://accounts.google.com/servicelogin" target="popup" onclick="window.open('https://accounts.google.com/servicelogin','popup','width=600,height=600'); return false;">
-								<img src="images/google-icon.png"></a>
+								<img src="../register/images/google-icon.png"></a>
 							<a href="https://twitter.com/login?lang=en" target="popup" onclick="window.open('https://twitter.com/login?lang=en','popup','width=600,height=600'); return false;">
-								<img src="images/twitter-icon.png"></a>
-						</div>
-					</div>
-
-					<!-- -------Carousel Product Section------- -->
-					<div class="carousel-wrapper">
-						<div class="carousel-container">
-							<div class="carousel-title">
-								<h3 class="featured-title" >FEATURED PRODUCTS</h3>
-							</div>
-							<div class="carousel" id="carousel">
-								<img class="carousel-image1" id="carousel-image1" src="../../images/makima-clothing.png" alt="image">
-								<img class="carousel-image2" id="carousel-image2" src="../../images/itadori-figurine.png" alt="image">
-								<img class="carousel-image3" id="carousel-image3" src="../../images/sakamoto-days.png" alt="image">
-								<img class="carousel-image4" id="carousel-image4" src="../../images/mushoku-case.png" alt="image">
-							</div>
-							<div class="navigation" style="z-index: 5;">
-								<img class="button1" id="button1" src="../../images/left-arrow.png" alt="left arrow">
-								<img class="button2" id="button2" src="../../images/right-arrow.png" alt="right arrow">
-							</div>
-							<div class="carousel-title">
-								<a class="featured-product" href="../products/products.html"><p class="featured-text">VIEW PRODUCTS</p></a>
-							</div>
+								<img src="../register/images/twitter-icon.png"></a>
 						</div>
 					</div>
 				</div>
-				<!-- reminder -->
-				<div class="reminder-box">
-					<div class="reminder">
-					Registering allows you to be able to purchase/buy anime figurines, clothings, body pillows and more in AniQuinch. Your information
-					will be secured and will not be used for anything besides account creation and loging in. We assure you a great service and will
-					comply with the proper laws relating to online purchasing and transactions. Don't forget to read the terms and conditions for
-					more information about our policies, and click the checkbox to accept the terms and conditions before registering for an account
-					in the website. Reminder, safety of your account such as losing and forgetting your password or email is on the user's responsibility
-					in which the website only has limited capabilty to help in restoring your account, so always remember and save your account's login
-					information.
+				<!-- -------Carousel Product Section------- -->
+				<div class="carousel-wrapper">
+					<div class="carousel-container">
+						<div class="carousel-title">
+							<h3 class="featured-title" >FEATURED PRODUCTS</h3>
+						</div>
+						<div class="carousel" id="carousel">
+							<img class="carousel-image1" id="carousel-image1" src="../../images/makima-clothing.png" alt="image">
+							<img class="carousel-image2" id="carousel-image2" src="../../images/itadori-figurine.png" alt="image">
+							<img class="carousel-image3" id="carousel-image3" src="../../images/sakamoto-days.png" alt="image">
+							<img class="carousel-image4" id="carousel-image4" src="../../images/mushoku-case.png" alt="image">
+						</div>
+						<div class="navigation" style="z-index: 5;">
+							<img class="button1" id="button1" src="../../images/left-arrow.png" alt="left arrow">
+							<img class="button2" id="button2" src="../../images/right-arrow.png" alt="right arrow">
+						</div>
+						<div class="carousel-title">
+							<a class="featured-product" href="../products/products.html"><p class="featured-text">VIEW PRODUCTS</p></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</body>
-	<script src="../../../script.js"></script>
+	<script>
+		//Carousel function
+		const carousel = document.querySelector("#carousel");
+		const images = document.querySelectorAll(".carousel img");
+		const btn1 = document.querySelector("#button1");
+		const btn2 = document.querySelector("#button2");
+		var About = document.querySelector("#About");
+		let counter = 0;
+		btn1.addEventListener('click', function(){
+			if(counter <= 0) return;
+			carousel.style.transition = "transform 1s ease-in-out";
+			counter--;
+			carousel.style.transform = 'translateX(' + (-640 * counter) + 'px)';
+		});
+		btn2.addEventListener('click', function(){
+			if(counter >= images.length - 1) return;
+			carousel.style.transition = "transform 1s ease-in-out";
+			counter++;
+			carousel.style.transform = 'translateX(' + (-640 * counter) + 'px)';
+		});
+	</script>
 </html>

@@ -458,32 +458,32 @@ figure:hover
 .button:hover {
 	background-color: #ff3568;
 }
-.body-pillow1
+.clothing1
 {
 	grid-column: 1;
 	grid-row: 1;
 }
-.body-pillow2
+.clothing2
 {
 	grid-column: 2;
 	grid-row: 1;
 }
-.body-pillow3
+.clothing3
 {
 	grid-column: 3;
 	grid-row: 1;
 }
-.body-pillow4
+.clothing4
 {
 	grid-column: 1;
 	grid-row: 2;
 }
-.body-pillow5
+.clothing5
 {
 	grid-column: 2;
 	grid-row: 2;
 }
-.body-pillow6
+.clothing6
 {
 	grid-column: 3;
 	grid-row: 2;

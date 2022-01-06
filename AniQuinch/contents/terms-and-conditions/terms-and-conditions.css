@@ -5,12 +5,24 @@
 	padding: 0%;
 	margin: 0%;
 }
+html {
+	scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
     display: none;
 }
 body
 {
-	background-color: rgb(255, 203, 220);
+	display: flex;
+	flex-direction: column;
+}
+.main-wrapper
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	background: linear-gradient(to right, #ffabf9, #ffba82);
 }
 /* Website Title */
 .main-website-title
@@ -301,7 +313,7 @@ body
 {
 	width: 100%;
 }
-/* REGISTER */
+/* CART */
 .register
 {
 	display: flex;
@@ -367,37 +379,15 @@ body
 .breadcrumb-link--active
 {
 	color: #ff3c6d;
-	font-weight: 900;
 }
-.login
-{
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.form-box
-{
-	width: 1600px;
-	height: 645px;
-	top: 10.2rem;
-	position: relative;
-	background: #ffffff;
-	padding: 20px;
-	overflow: auto;
-	border-radius: 30px;
-	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-}
-
 /* -------Footer------- */
 .footer-wrapper
 {
-	height: 405px;
+	height: 100%;
 	width: 100%;
 	background-color:#000000;
-	position: absolute;
-	margin-top: 210px;
+	position: relative;
+	top: 67rem;
 }
 .contacts-wrapper
 {
@@ -405,6 +395,7 @@ body
 	flex-direction: column;
 	align-items: center;
 	padding-top: 3rem;
+	padding-bottom: 1rem;
 	color: rgb(255, 255, 255);
 }
 .footer-content
@@ -481,3 +472,37 @@ body
 	width: 3.5rem;
 	height: 3.5rem;
 }
+
+/* -------Header------- */
+.header-container
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	bottom: 14rem;
+}
+
+/* -------TOS Form------- */
+.login
+{
+	height: 100%;
+	width: 100%;
+	display: relative;
+	align-items: center;
+}
+.form-box
+{
+	width: 80rem;
+	height: 40rem;
+	position: relative;
+	background: #ffffff;
+	padding: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+	overflow: auto;
+	border-radius: 30px;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+
