@@ -4,76 +4,80 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet"  href = "login.css">
+		<link rel="stylesheet"  href = "register.css">
 		<link rel="icon" type="image" href="https://cdn-icons-png.flaticon.com/512/2362/2362719.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-		<title>AniQuinch - Account Login In</title>
+		<title>AniQuinch - Account Login/Register</title>
 	</head>
 	<body>
 		<!-- -------Navbar------- -->
-		<div class="container">
-			<nav class="navigation-container">
-				<div class="navbar-margin">
-					<div class="navbar-container">
-						<div class="menu" id="menu">
-							<div class="line1"></div>
-							<div class="line2"></div>
-							<div class="line3"></div>
+		<div class="main-wrapper">
+			<!-- -------Navigation Bar------- -->
+			<div class="container">
+				<nav class="navigation-container">
+					<div class="navbar-margin">
+						<div class="navbar-container">
+							<div class="menu" id="menu">
+								<div class="menu-wrapper">
+									<div class="line1"></div>
+									<div class="line2"></div>
+									<div class="line3"></div>
+									<!-- -------SideBar------- -->
+									<div class="sidebar-container" id="sidebar-container">
+										<div class="sidebar-wrapper">
+											<div class="sidebar-content-home">
+												<img src="../../images/home.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="../../../index.html"> Home </a>
+											</div>
+											<div class="sidebar-content-about">
+												<img src="../../images/about.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="about.html" target="_blank"> About </a>
+											</div>
+											<div class="sidebar-content-services">
+												<img src="../../images/services.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="../services/services.html" target="_blank"> Services </a>
+											</div>
+											<div class="sidebar-content-contacts">
+												<img src="../../images/contact.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="#Contacts"> Contacts </a>
+											</div>
+											<div class="sidebar-content-product">
+												<img src="../../images/product.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="products.html"> Products </a>
+											</div>
+											<div class="sidebar-content-register">
+												<img src="../../images/register.png" alt="" class="sidebar-icon">
+												<a class="sidebar-button" href="../register/register.html" target="_blank"> Register </a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="links">
+								<a class="links-button" href = "../../../index.html">Home</a>
+								<a class="links-button" href = "products.html"> Products</a>
+								<h1 class="main-website-title">AniQuinch</h1>
+							</div>
 						</div>
-						<div class="links">
-							<a class="links-button" href = "../../../index.html">Home</a>
-							<h1 class="main-website-title">AniQuinch</h1>
-							<a class="links-button" href = "../products/products.html" target="_blank"> Products</a>
-						</div>
-						<div class="cart">
-							<img src="images/shopping-cart.png" alt="cart" class="cart-icon">
-						</div>
 					</div>
-				</div>
-			</nav>
-			<div class="sidebar-container" id="sidebar-container">
-				<div class="sidebar-wrapper">
-					<div class="sidebar-content-home">
-						<img src="images/home.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="../../../index.html" target="_blank"> Home </a>
-					</div>
-					<div class="sidebar-content-about">
-						<img src="images/about.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="../../../index.html#About" target="_blank"> About </a>
-					</div>
-					<div class="sidebar-content-services">
-						<img src="images/services.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="../../../index.html#Services" target="_blank"> Services </a>
-					</div>
-					<div class="sidebar-content-contacts">
-						<img src="images/contact.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="../../../index.html#Contacts" target="_blank"> Contacts </a>
-					</div>
-					<div class="sidebar-content-product">
-						<img src="images/product.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="../products/products.html" target="_blank"> Products </a>
-					</div>
-					<div class="sidebar-content-login">
-						<img src="images/login.png" alt="" class="sidebar-icon">
-						<a class="sidebar-button" href="login.html" target="_blank"> Login </a>
-					</div>
+				</nav>
+				<!-- -------Breadcrumb------- -->
+				<div class="breadcrumb-container">
+					<ul class="breadcrumb-list">
+						<li class="breadcrumb">
+							<a href="../../../index.html" class="breadcrumb-link">Home</a>
+						</li>
+						<li class="breadcrumb">
+							<a href="products.html" class="breadcrumb-link breadcrumb-link--active">Login/Register</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 		<!-- -------Login------- -->
 		<div class="login">
-			<div class="breadcrumb-container">
-				<ul class="breadcrumb-list">
-					<li class="breadcrumb">
-						<a href="../../../index.html" class="breadcrumb-link">Home</a>
-					</li>
-					<li class="breadcrumb">
-						<a href="login.html" class="breadcrumb-link breadcrumb-link--active">Login/Register</a>
-					</li>
-				</ul>
-			</div>
 			<div class="form-box">
 				<div class="button-box">
 					<div id="login-button"></div>
@@ -89,8 +93,8 @@
 						<img src="images/twitter-icon.png"></a>
 				</div>
 				<form id="login" class="input-form">
-					<input type="text" class="input-area" placeholder="Username" oninvalid="alert('You must fill out the form!');" required>
-					<input type="password" class="input-area" id="password1" placeholder="Enter Password" oninvalid="alert('You must fill out the form!');" required>
+					<input type="text" class="input-area" placeholder="Username">
+					<input type="password" class="input-area" id="password1" placeholder="Enter Password">
 					<div class="reset-password">
 						<a href="reset-password.html" 
 							target="popup" onclick="window.open('reset-password.html','popup','width=1980,height=1080'); return false;">
@@ -98,20 +102,20 @@
 						</a>
 					</div>
 					<div class="check-boxstyle">
-						<input type="checkbox" class="check-box" onchange="document.getElementById('password1').type = this.checked ? 'text' : 'password'">Show Password
+						<input type="checkbox" class="check-box">Show Password
 						<br>
 						<input type="checkbox" class="check-box">Remember Password
 					</div>
 					<button type="submit" class="submit-button">Log In</button>
 				</form>
 				<form id="register" class="input-form">
-					<input type="text" class="input-area" placeholder="Username" oninvalid="alert('You must fill out the form!');" required>
-					<input type="email" class="input-area" placeholder="Email Address" oninvalid="alert('You must fill out the form!');" required>
-					<input type="password" class="input-area" id="password2" placeholder="Enter Password" oninvalid="alert('You must fill out the form!');" required>
+					<input type="text" class="input-area" placeholder="Username">
+					<input type="email" class="input-area" placeholder="Email Address">
+					<input type="password" class="input-area" id="password2" placeholder="Enter Password">
 					<div class="check-boxstyle">
-						<input type="checkbox" class="check-box" onchange="document.getElementById('password2').type = this.checked ? 'text' : 'password'">Show Password
+						<input type="checkbox" class="check-box">Show Password
 						<br>
-						<input type="checkbox" class="check-box" oninvalid="alert('You must agree to the terms & conditions!');" required>I agree to the 
+						<input type="checkbox" class="check-box">I agree to the 
 						<a href="terms-and-condition.html" target="_blank">terms</a> & <a href="terms-and-condition.html" target="_blank">conditions</a>
 					</div>
 					<button type="submit" class="submit-button">Register</button>
@@ -135,5 +139,11 @@
 		</div>
 		<!-- -------Breadcrumb Section------- -->
 	</body>
-	<script src="login.js"></script>
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("login-button");
+		function register(){x.style.left = "-400px";y.style.left = "50px";z.style.left = "110px";}
+		function login(){x.style.left = "50px";y.style.left = "450px";z.style.left = "0";}
+	</script>
 </html>
