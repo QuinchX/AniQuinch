@@ -4,12 +4,12 @@
 			<meta charset="UTF-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="stylesheet"  href = "manga.css">
+			<link rel="stylesheet"  href = "cart.css">
 			<link rel="icon" type="image" href="https://cdn-icons-png.flaticon.com/512/2362/2362719.png">
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-			<title>AniQuinch - Manga Products</title>
+			<title>AniQuinch - Products</title>
 	</head>
 	<body>
 		<!-- -------Navbar------- -->
@@ -56,14 +56,9 @@
 								</div>
 							</div>
 							<div class="links">
-								<a class="links-button" href = "../../../../index.html">Home</a>
-								<h1 class="main-website-title">AniQuinch</h1>
+                                <a class="links-button" href = "../../../../index.html">Home</a>
 								<a class="links-button" href = "../products.html"> Products</a>
-							</div>
-							<div class="cart">
-								<a class="cart-button" href = "../../products/add to cart/cart.html">
-									<img src="../images/shopping-cart.png" alt="cart" class="cart-icon">
-								</a>
+								<h1 class="main-website-title">AniQuinch</h1>
 							</div>
 						</div>
 					</div>
@@ -77,82 +72,29 @@
 						<li class="breadcrumb">
 							<a href="../products.html" class="breadcrumb-link">Products</a>
 						</li>
-						<li class="breadcrumb">
-							<a href="manga.html" class="breadcrumb-link breadcrumb-link--active">Manga</a>
+							<li class="breadcrumb">
+							<a href="cart.html" class="breadcrumb-link breadcrumb-link--active">Cart</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-		
-		<!-- -------Product Section------- -->
-		<div class="product-main-wrapper">
-			<!-----Figurines----->
-			<div class="content-wrapper">
-				<div class="heading"><h1> Manga </h1></div>
-				<div class="product-wrapper">
-					<figure class="figurine1">
-						<div class="img-background">
-							<a href="">
-								<img class="product-img" src="../images/chainsaw_man_manga.png" alt="CHAINSAW MAN MANGA">
-							</a>
-						</div>
-						<div class="title"> CHAINSAW MAN <br> MANGA </div>
-						<div class="desc"> PHP 800.00 </div>
-						<input type="button" class="button" value="ADD TO CART">
-					</figure>
-					<figure class="figurine2">
-						<div class="img-background">
-							<a href="">
-								<img class="product-img" src="../images/one_punch_man_manga.png" alt="ONE PUNCH MAN MANGA">
-							</a>
-						</div>
-						<div class="title"> ONE PUNCH MAN <br> MANGA </div>
-						<div class="desc"> PHP 800.00 </div>
-						<input type="button" class="button" value="ADD TO CART">
-					</figure>
-					<figure class="figurine3">
-						<div class="img-background">
-							<a href="">
-								<img class="product-img" src="../images/the_promised_neverland_manga.png" alt="THE PROMISED NEVERLAND MANGA">
-							</a>
-						</div>
-						<div class="title"> THE PROMISED NEVERLAND <br> MANGA </div>
-						<div class="desc"> PHP 800.00 </div>
-						<input type="button" class="button" value="ADD TO CART">
-					</figure>
-					<figure class="figurine4">
-						<div class="img-background">
-							<a href="">
-								<img class="product-img" src="../images/jujutsu_kaisen_manga.png" alt="JUJUTSU KAISEN MANGA">
-							</a>
-						</div>
-						<div class="title"> JUJUTSU KAISEN <br> MANGA </div>
-						<div class="desc"> PHP 700.00 </div>
-						<input type="button" class="button" value="ADD TO CART">
-					</figure>
-					<figure class="figurine5">
-						<div class="img-background">
-							<a href="">
-								<img class="product-img" src="../images/saka_days_manga.png" alt="SAKAMOTO DAYS MANGA">
-							</a>
-						</div>
-						<div class="title"> SAKAMOTO DAYS <br> MANGA </div>
-						<div class="desc"> PHP 700.00 </div>
-						<input type="button" class="button" value="ADD TO CART">
-					</figure>
-					<figure class="figurine6">
-						<div class="img-background">
-							<a href="">
-								<img class="product-img" src="../images/TQQ_manga.png" alt="THE QUINTESSENTIAL QUINTUPLETS">
-							</a>
-						</div>
-						<div class="title"> THE QUINTESSENTIAL QUINTUPLETS <br> MANGA </div>
-						<div class="desc"> PHP 750.00 </div>
-						<input type="button" class="button" value="ADD TO CART">
-					</figure>
-				</div>
-			</div>
-		</div>	
+		</div>
+		<!-- -------Add to Cart------- -->
+        <div class="cart-main-wrapper">
+            <div class="cart-wrapper">
+                <div class="cart-title-wrapper">
+                    <p class="cart-title">Shopping Cart</p>
+                </div>
+                <div class="cart-container">
+                    <img src="../images/qiqi-tired-of-u.png" alt="qiqi-tired" class="qiqi">
+                    <p class="text">Your cart is currently empty . . .</p>
+                    <p class="text1">Add something to your cart</p>
+                    <div class="continue-button">
+                        <a class="continue" href="../../products/products.html">continue shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<!-- -------Footer Section------- -->
 		<div class="footer-main-wrapper">
 			<div class="footer-wrapper" id="Contacts">
@@ -171,5 +113,4 @@
 			</div>
 		</div>
 	</body>
-	<script src="product.js"></script>
 </html>

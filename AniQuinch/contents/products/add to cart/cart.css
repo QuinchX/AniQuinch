@@ -8,9 +8,6 @@
 ::-webkit-scrollbar {
     display: none;
 }
-body {
-	background-color: #ffffff;
-}
 /* Website Title */
 .main-website-title
 {
@@ -25,6 +22,8 @@ body {
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	position: absolute;
+	top: 0;
 }
 .navigation-container
 {
@@ -41,7 +40,7 @@ body {
 }
 .navbar-margin .navbar-container>*
 {
-	width: 35%;
+	width: 30%;
 }
 .navbar-container
 {
@@ -56,6 +55,7 @@ body {
 .menu
 {
 	cursor: pointer;
+	margin-right: 44rem;
 }
 .line1
 {
@@ -300,33 +300,6 @@ body {
 {
 	width: 100%;
 }
-/* CART */
-.cart
-{
-	display: flex;
-	justify-content: flex-end;
-	cursor: pointer;
-}
-.cart-icon
-{
-	width: 2rem;
-	height: 2rem;
-}
-.cart-icon:hover
-{
-	filter: drop-shadow(0 0 2px white);
-	animation: .50s cubic-bezier(1, -0.15, 0, 0.97) 0s 1 rotate;
-}
-@keyframes rotate{
-	0%
-	{
-		transform: rotate(0deg);
-	}
-	100%
-	{
-		transform: rotate(360deg);
-	}
-}
 /* -------Breadcrumb------- */
 .breadcrumb-container
 {
@@ -369,128 +342,97 @@ body {
 	color: #ff3c6d;
 	font-weight: 900;
 }
-/* -------Products------- */
-.product-main-wrapper
-{
-	margin-left: 20rem;
-	margin-right: 20rem;
-	background-color: #ffd1dc;
-	box-shadow: 0px 0px 100px rgba(255, 181, 216, 0.486);
-}
-.content-wrapper
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-bottom: 5rem;
-}
-.product-wrapper
-{
-	display: grid;
-	justify-items: center;	
-}
-.heading {
-	font-size: 5rem;
-	text-align: center;
-	color: white;
-	text-shadow: 5px 5px #ff678d;
-	padding-top: 150px;
-}
+/* -------Add to Cart------- */
 
-figure{
+.cart-main-wrapper
+{
+	margin-top: 7.7rem;
+}
+.cart-wrapper
+{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 3rem;
-	border-radius: 1rem;
-	background-color: #ffbdce;
-	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.767);
-	transition: .35s ease-in-out;
+	padding-bottom: 10rem;
+	background-image: url(../images/sakura-background.jpg);
+	filter: saturate(60%);
 }
-figure:hover 
+.cart-title-wrapper
 {
-	box-shadow: 0px 0px 15px #ff5681;
+	margin: 1rem;
 }
-.img-background
+.cart-title
+{
+	color: #ffffff;
+	text-shadow: 2.5px 4px #ff3c6d;
+	-webkit-text-stroke-width: .1rem;
+	font-size: 3.5rem;
+	font-weight: bolder;
+}
+.cart-container
+{
+	background-color: #ffd8e7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0px 0px 5px black;
+	border-radius: 1rem;
+	width: 100rem;
+	height: 42rem;
+}
+.qiqi
+{
+	width: 15%;
+	filter: sepia() saturate(100%) hue-rotate(270deg);
+	padding: 3rem;
+	margin-top: 3rem;
+}
+.text
+{
+	font-size: 1.2rem;
+	-webkit-text-stroke-width: .03rem;
+	font-weight: 900;
+}
+.text1
+{
+	font-size: 1.5rem;
+	padding: .5rem;
+}
+.continue-button
+{
+	background-color: #ff76a4;
+	border-radius: .5rem;
+	display: flex;
+	margin: 1.5rem;
+	transition: .25s ease-in-out;
+	padding: 1rem;
+}
+.continue-button:hover
+{
+	background-color: #ff0055;
+}
+.continue
+{
+	position: relative;
+	display: inline-block;
+	color: #ffffff;
+}
+.continue::after
+{
+	content: "";
+    position: absolute;
+	left: 0;
+	bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+	border-radius: 420px;
+    transition: width .75s cubic-bezier(1, -0.15, 0, 0.97);
+}
+.continue:hover::after
 {
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: white;
-	border-top-left-radius: 1rem;
-	border-top-right-radius: 1rem;
 }
-.product-img
-{
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	width: 17rem;
-	height: 13rem;
-	filter: drop-shadow(0px 0px 2px #000000);
-}
-.title
-{
-	font-size: 1rem;
-	text-align: center;
-	margin-top: 1rem;
-	color: black;
-	font-weight: bold;
-}
-.desc
-{
-	font-size: 1rem;
-	margin-top: 1rem;
-	color: black;
-}
-.button {
-	background-color: #080708;
-	border: none;
-	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.767);
-	position: relative;
-	top: 2rem;
-	width: 8rem;
-	height: 3.5rem;
-	font-size: 1rem;
-	background-color: #ff81a1;
-	color: white;
-	cursor: pointer;
-	transition: .25s ease-in-out;
-}
-.button:hover {
-	background-color: #ff3568;
-}
-.figurine1
-{
-	grid-column: 1;
-	grid-row: 1;
-}
-.figurine2
-{
-	grid-column: 2;
-	grid-row: 1;
-}
-.figurine3
-{
-	grid-column: 3;
-	grid-row: 1;
-}
-.figurine4
-{
-	grid-column: 1;
-	grid-row: 2;
-}
-.figurine5
-{
-	grid-column: 2;
-	grid-row: 2;
-}
-.figurine6
-{
-	grid-column: 3;
-	grid-row: 2;
-}
-
 /* -------Footer------- */
 .footer-wrapper
 {

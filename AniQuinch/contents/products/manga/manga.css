@@ -314,7 +314,18 @@ body {
 }
 .cart-icon:hover
 {
-	filter: drop-shadow(0 0 10px white);
+	filter: drop-shadow(0 0 2px white);
+	animation: .50s cubic-bezier(1, -0.15, 0, 0.97) 0s 1 rotate;
+}
+@keyframes rotate{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
 }
 /* -------Breadcrumb------- */
 .breadcrumb-container
