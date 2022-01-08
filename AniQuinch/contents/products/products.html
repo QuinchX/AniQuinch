@@ -151,6 +151,59 @@
 					</table>
 				</div>
 			</div>
+			<!-- -------Carousel Product Section------- -->
+			<div class="carousel-wrapper">
+				<div class="carousel-container">
+					<div class="carousel-title">
+						<h3 class="featured-title" >WHAT'S NEW</h3>
+					</div>
+					<div class="carousel" id="carousel">
+						<img class="carousel-image" id="carousel-image1" src="../../images/makima-clothing.png" alt="image">
+						<img class="carousel-image" id="carousel-image2" src="../../images/itadori-figurine.png" alt="image">
+						<img class="carousel-image" id="carousel-image3" src="../../images/sakamoto-days.png" alt="image">
+						<img class="carousel-image" id="carousel-image4" src="../../images/mushoku-case.png" alt="image">
+					</div>
+					<div class="navigation" style="z-index: 5;">
+						<img class="button1" id="button1" src="../../images/left-arrow.png" alt="left arrow">
+						<img class="button2" id="button2" src="../../images/right-arrow.png" alt="right arrow">
+					</div>
+				</div>
+			</div>
+			<!-----Figurines----->
+			<div class="content-wrapper1">
+				<div class="product-wrapper">
+					<figure class="figurine1">
+						<div class="img-background">
+							<a>
+								<img class="product-img" src="images/new-makima-clothing.png" alt="YUKINO YUKINOSHITA FIGURINE">
+							</a>
+						</div>
+						<div class="title"> MAKIMA <br> T-SHIRT </div>
+						<div class="desc"> PHP 500 </div>
+						<input type="button" class="button" value="ADD TO CART">
+					</figure>
+					<figure class="figurine2">
+						<div class="img-background">
+							<a>
+								<img class="product-img" src="images/new-itadori-figurine.png" alt="C.C. & L.L. FIGURINE">
+							</a>
+						</div>
+						<div class="title"> ITADORI YUUJI <br> FIGURINE </div>
+						<div class="desc"> PHP 1,500.00 </div>
+						<a href="../register/register.html"><input type="button" class="button" value="ADD TO CART"></a>
+					</figure>
+					<figure class="figurine3">
+						<div class="img-background">
+							<a>
+								<img class="product-img" src="images/new-sakamoto-days.png" alt="KAORI MIYAZANO FIGURINE">
+							</a>
+						</div>
+						<div class="title"> SAKAMOTO DAYS <br> VOLUME 5 </div>
+						<div class="desc"> PHP 800.00 </div>
+						<input type="button" class="button" value="ADD TO CART">
+					</figure>
+				</div>
+			</div>
 			<!-----Figurines----->
 			<div class="content-wrapper1">
 				<div class="heading"><h1> Figurines </h1></div>
@@ -326,4 +379,26 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		// Carousel Function
+		const carousel = document.querySelector("#carousel");
+		const images = document.querySelectorAll(".carousel img");
+		const btn1 = document.querySelector("#button1");
+		const btn2 = document.querySelector("#button2");
+		var About = document.querySelector("#About");
+		let counter = 0;
+
+		btn1.addEventListener('click', function(){
+			if(counter <= 0) return;
+			carousel.style.transition = "transform 1s ease-in-out";
+			counter--;
+			carousel.style.transform = 'translateX(' + (-1280 * counter) + 'px)';
+		});
+		btn2.addEventListener('click', function(){
+			if(counter >= images.length - 1) return;
+			carousel.style.transition = "transform 1s ease-in-out";
+			counter++;
+			carousel.style.transform = 'translateX(' + (-1280 * counter) + 'px)';
+		});
+	</script>
 </html>

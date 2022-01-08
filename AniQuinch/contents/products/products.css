@@ -624,6 +624,101 @@ figure:hover
 	grid-column: 3;
 	grid-row: 2;
 }
+/* Carousel */
+.carousel-wrapper
+{
+	display: flex;
+	justify-content: center;
+	background-color: #000000;
+	box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.carousel-container
+{
+	max-width: 90rem;
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 4.5rem;
+}
+.carousel-title
+{
+	display: flex;
+	justify-content: center;
+}
+.featured-title
+{
+	color: #ffffff;
+	font-size: 2rem;
+	font-weight: 400;
+	padding: 2rem;
+	transition: 1s;
+}
+.featured-product
+{
+	border-style: solid;
+	border-width: 0.1rem;
+	border-radius: 0.3rem;
+	color: #ffffff;
+	font-weight: 400;
+	background-color: #000000;
+	padding: 0.5rem;
+	margin: 1rem;
+	position: relative;
+	bottom: 1rem;
+	transition: .25s ease-in-out;
+}
+.featured-product:hover .featured-text
+{
+	color: rgb(0, 0, 0);
+}
+.featured-product:hover
+{
+	background-color: #ffffff;
+}
+.carousel 
+{
+	display: flex;
+}
+img
+{
+	width: 100%;
+	transition: 1s ease-out;
+}
+.navigation 
+{
+	width: 100%;
+	position: relative;
+	bottom: 28rem;
+	display: flex;
+	justify-content: space-between;
+}
+.button1
+{
+	max-width: 2rem;
+	position: relative;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	transition: 1s;
+	filter: drop-shadow(1px 1px 2px #222);
+}
+.button2
+{
+	max-width: 2rem;
+	position: relative;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	transition: 1s;
+	filter: drop-shadow(-1px 1px 2px #222);
+}
+.button1:hover
+{
+	cursor: pointer;
+	max-width: 1rem;
+}
+.button2:hover
+{
+	cursor: pointer;
+	max-width: 1rem;
+}
 .table-wrapper
 {
 	padding: 5rem;
