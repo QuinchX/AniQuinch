@@ -136,124 +136,23 @@ body {
 	flex-direction: column;
 	margin-top: 5rem;
 }
-.sidebar-content-home
+.sidebar-content
 {
 	display: flex;
 	align-items: center;
 	transition: .25s ease-in-out;
 }
-.sidebar-content-home:hover
+.sidebar-content:hover
 {
 	background-color: #f5abbeb2;
 }
-.sidebar-content-home:hover .sidebar-button
+.sidebar-content:hover .sidebar-button
 {
 	color: #000000;
 	font-weight: 900;
 	
 }
-.sidebar-content-home:hover .sidebar-icon
-{
-	filter: none;
-}
-.sidebar-content-about
-{
-	display: flex;
-	align-items: center;
-	transition: .25s ease-in-out;
-}
-.sidebar-content-about:hover
-{
-	background-color: #f5abbeb2;
-}
-.sidebar-content-about:hover .sidebar-button
-{
-	color: #000000;
-	font-weight: 900;
-	
-}
-.sidebar-content-about:hover .sidebar-icon
-{
-	filter: none;
-}
-.sidebar-content-services
-{
-	display: flex;
-	align-items: center;
-	transition: .25s ease-in-out;
-}
-.sidebar-content-services:hover
-{
-	background-color: #f5abbeb2;
-}
-.sidebar-content-services:hover .sidebar-button
-{
-	color: #000000;
-	font-weight: 900;
-	
-}
-.sidebar-content-services:hover .sidebar-icon
-{
-	filter: none;
-}
-.sidebar-content-contacts
-{
-	display: flex;
-	align-items: center;
-	transition: .25s ease-in-out;
-}
-.sidebar-content-contacts:hover
-{
-	background-color: #f5abbeb2;
-}
-.sidebar-content-contacts:hover .sidebar-button
-{
-	color: #000000;
-	font-weight: 900;
-	
-}
-.sidebar-content-contacts:hover .sidebar-icon
-{
-	filter: none;
-}
-.sidebar-content-product
-{
-	display: flex;
-	align-items: center;
-	transition: .25s ease-in-out;
-}
-.sidebar-content-product:hover
-{
-	background-color: #f5abbeb2;
-}
-.sidebar-content-product:hover .sidebar-button
-{
-	color: #000000;
-	font-weight: 900;
-	
-}
-.sidebar-content-product:hover .sidebar-icon
-{
-	filter: none;
-}
-.sidebar-content-register
-{
-	display: flex;
-	align-items: center;
-	transition: .25s ease-in-out;
-}
-.sidebar-content-register:hover
-{
-	background-color: #f5abbeb2;
-	
-}
-.sidebar-content-register:hover .sidebar-button
-{
-	color: #000000;
-	font-weight: 900;
-	
-}
-.sidebar-content-register:hover .sidebar-icon
+.sidebar-content:hover .sidebar-icon
 {
 	filter: none;
 }
@@ -898,7 +797,7 @@ table {
 	transition: .50s ease-in-out;
 }
 
-.desc
+.desc1
 {
 	text-align: center;
 	color: white;
@@ -912,7 +811,7 @@ table {
 	cursor: pointer;
 	background-color: #ffffff;
 }
-.category1:hover .desc
+.category1:hover .desc1
 {
 	color: #000000;
 }
@@ -922,7 +821,7 @@ table {
 	cursor: pointer;
 	background-color: #ffffff;
 }
-.category2:hover .desc
+.category2:hover .desc1
 {
 	color: #000000;
 }
@@ -932,7 +831,7 @@ table {
 	cursor: pointer;
 	background-color: #ffffff;
 }
-.category3:hover .desc
+.category3:hover .desc1
 {
 	color: #000000;
 }
@@ -942,7 +841,7 @@ table {
 	cursor: pointer;
 	background-color: #ffffff;
 }
-.category4:hover .desc
+.category4:hover .desc1
 {
 	color: #000000;
 }
