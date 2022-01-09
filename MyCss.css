@@ -122,7 +122,7 @@ body
 	height: 100%;
 	left: -350px;
 	top: 0px;
-	transition: .45s ease-in-out;
+	transition: .55s cubic-bezier(0.43, 0.44, 0, 0.99);
 	display: flex;
 	position: fixed;
 	z-index: -1;
@@ -293,7 +293,7 @@ body
 	flex-direction: column;
 	align-items: center;
 	padding-top: 3rem;
-	padding-bottom: 1rem;
+	padding-bottom: 6rem;
 	color: rgb(255, 255, 255);
 }
 .footer-content
@@ -326,6 +326,9 @@ body
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	position: relative;
+	top: 2rem;
+	right: 3.7rem;
 }
 
 .social-media1
@@ -335,7 +338,9 @@ body
 	filter: invert();
 	padding: 2rem;
 	cursor: pointer;
-	transition: .25s ease-in-out;
+	transition: all 0.45s cubic-bezier(0.02, 1, 0.22, 1.38) 0s;
+	position: absolute;
+	right: 3rem;
 }
 .social-media2
 {
@@ -344,7 +349,8 @@ body
 	filter: invert();
 	padding: 2rem;
 	cursor: pointer;
-	transition: .25s ease-in-out;
+	transition: all 0.45s cubic-bezier(0.02, 1, 0.22, 1.38) 0s;
+	position: absolute;
 }
 .social-media3
 {
@@ -353,22 +359,21 @@ body
 	filter: invert();
 	padding: 2rem;
 	cursor: pointer;
-	transition: .25s ease-in-out;
+	transition: all 0.45s cubic-bezier(0.02, 1, 0.22, 1.38) 0s;
+	position: absolute;
+	left: 10rem;
 }
 .social-media1:hover
 {
-	width: 3.5rem;
-	height: 3.5rem;
+	transform: scale(1.3);
 }
 .social-media2:hover
 {
-	width: 3.5rem;
-	height: 3.5rem;
+	transform: scale(1.3);
 }
 .social-media3:hover
 {
-	width: 3.5rem;
-	height: 3.5rem;
+	transform: scale(1.3);
 }
 .darken
 {
@@ -546,7 +551,7 @@ img
 	position: relative;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	transition: 1s;
+	transition: .45s cubic-bezier(0.65, 0.05, 0.36, 1);
 	filter: drop-shadow(1px 1px 2px #222);
 }
 .button2
@@ -555,7 +560,7 @@ img
 	position: relative;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	transition: 1s;
+	transition: .45s cubic-bezier(0.65, 0.05, 0.36, 1);
 	filter: drop-shadow(-1px 1px 2px #222);
 }
 .button1:hover
