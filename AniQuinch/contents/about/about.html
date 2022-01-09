@@ -88,38 +88,61 @@
 			</div>
 			<div class="main-content-wrapper">
 				<div class="about-wrapper" id="About">
-					<div class="about-margin">
-						<div class="about">
-							<h1 class="about-title">About us</h1>
-							<p class="about-paragraph">
-								AniQuinch is a shopping website dedicated for selling Anime-related merchandises.
-								We offer different types of Anime merchandise, such as mangas, figurines, mousepads, and many more.
-								Our site is approved by the government law, and all transactions are legal and security of products and personal
-								information are assured. The site offers refund, if the issues come from our side, due to delivery delay, damage during delivery, 
-								and other issues relating to the process of transaction that results from using our site. We have trustworthy 
-								sellers from all around the globe, ranging not only from Japan and US, there are also from China, Malaysia, Australia, and other countries. 
-								AniQuinch is the finest option for purchasing anime merchandise; we are professional that enjoy giving all of you anime lovers the greatest experience possible.
-							</p>
+					<!-- -------Carousel Product Section------- -->
+					<div class="carousel-wrapper">
+						<div class="carousel-container">
+							<div class="carousel-title">
+								<h3 class="featured-title" >FEATURED PRODUCTS</h3>
+							</div>
+							<div class="carousel" id="carousel">
+								<img class="carousel-image" id="carousel-image1" src="../../images/makima-clothing.png" alt="image">
+								<img class="carousel-image" id="carousel-image2" src="../../images/itadori-figurine.png" alt="image">
+								<img class="carousel-image" id="carousel-image3" src="../../images/sakamoto-days.png" alt="image">
+								<img class="carousel-image" id="carousel-image4" src="../../images/mushoku-case.png" alt="image">
+							</div>
+							<div class="navigation" style="z-index: 5;">
+								<img class="button1" id="button1" src="../../images/left-arrow.png" alt="left arrow">
+								<img class="button2" id="button2" src="../../images/right-arrow.png" alt="right arrow">
+							</div>
+							<div class="carousel-title">
+								<a class="featured-product" href="../products/products.html"><p class="featured-text">VIEW PRODUCTS</p></a>
+							</div>
 						</div>
-						<div class="about-title1">
-							<p>Our Products</p>
-						</div>
-						<div class="about-images">
-							<div class="image1">
-								<img class="about-images1" src="../../images/mona figurine.jpg" alt="">
-								<p class="image1-description">Figurines</p>
+					</div>
+					<div class="about-background">
+						<div class="about-margin">
+							<div class="about">
+								<h1 class="about-title">About us</h1>
+								<p class="about-paragraph">
+									AniQuinch is a shopping website dedicated for selling Anime-related merchandises.
+									We offer different types of Anime merchandise, such as mangas, figurines, mousepads, and many more.
+									Our site is approved by the government law, and all transactions are legal and security of products and personal
+									information are assured. The site offers refund, if the issues come from our side, due to delivery delay, damage during delivery, 
+									and other issues relating to the process of transaction that results from using our site. We have trustworthy 
+									sellers from all around the globe, ranging not only from Japan and US, there are also from China, Malaysia, Australia, and other countries. 
+									AniQuinch is the finest option for purchasing anime merchandise; we are professional that enjoy giving all of you anime lovers the greatest experience possible.
+								</p>
 							</div>
-							<div class="image2">
-								<img class="about-images2" src="../../images/hisoka hoodie.jpg" alt="">
-								<p class="image2-description">Clothings</p>
+							<div class="about-title1">
+								<p>Our Products</p>
 							</div>
-							<div class="image3">
-								<img class="about-images3" src="../../images/chizuru.jpg" alt="">
-								<p class="image3-description">Body Pillows</p>
-							</div>
-							<div class="image4">
-								<img class="about-images4" src="../../images/mangas.jfif" alt="">
-								<p class="image4-description">Mangas</p>
+							<div class="about-images">
+								<div class="image1">
+									<img class="about-images1" src="../../images/mona figurine.jpg" alt="">
+									<p class="image1-description">Figurines</p>
+								</div>
+								<div class="image2">
+									<img class="about-images2" src="../../images/hisoka hoodie.jpg" alt="">
+									<p class="image2-description">Clothings</p>
+								</div>
+								<div class="image3">
+									<img class="about-images3" src="../../images/chizuru.jpg" alt="">
+									<p class="image3-description">Body Pillows</p>
+								</div>
+								<div class="image4">
+									<img class="about-images4" src="../../images/mangas.jfif" alt="">
+									<p class="image4-description">Mangas</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -142,4 +165,25 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		// Carousel Function
+		const carousel = document.querySelector("#carousel");
+		const images = document.querySelectorAll(".carousel img");
+		const btn1 = document.querySelector("#button1");
+		const btn2 = document.querySelector("#button2");
+		var About = document.querySelector("#About");
+		let counter = 0;
+		btn1.addEventListener('click', function(){
+			if(counter <= 0) return;
+			carousel.style.transition = "transform 1s ease-in-out";
+			counter--;
+			carousel.style.transform = 'translateX(' + (-800 * counter) + 'px)';
+		});
+		btn2.addEventListener('click', function(){
+			if(counter >= images.length - 1) return;
+			carousel.style.transition = "transform 1s ease-in-out";
+			counter++;
+			carousel.style.transform = 'translateX(' + (-800 * counter) + 'px)';
+		});
+	</script>
 </html>

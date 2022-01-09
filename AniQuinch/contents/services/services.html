@@ -88,49 +88,72 @@
 			</div>
 			<!-- -------Services Section------- -->
             <div class="services-wrapper" id="Services">
-                <div class="services-margin">
-                    <div class="services">
-                        <h1 class="services-title">Services</h1>
-                        <p class="services-paragraph">
-                            Our customer service is available at all times, and our team responds within 24 hours. 
-                            This site is free to use, with just a few premium capabilities available, such as free shipping cost, 
-                            but the main functions that customers use, such as sorting products by price, reviews, and buck-order, 
-                            are available for free. During the holidays, we regularly offer several events that are open to the public. 
-                            These events include product freebies, special edition goods, and the possibility to win cash for every purchase 
-                            made during the event.
-                        </p>
-                    </div>
-                    <div class="cards-fluid">
-                        <div class="cards">
-                            <div class="card1">
-                                <h1 class="card1-title">Premium Account</h1>
-                                <p class="card1-paragraph">
-                                    AniQuinch provides a premium account service that allows users access to features 
-                                    such as no delivery cost when purchasing products. A premium account cost user for 10$ per month
-                                    but in return, gives user access to customizable profile, lesser ads and much more. Premium users 
-                                    also get the first access to new items and a reserved spot in limited edition merchandise.
-                                </p>
-                            </div>
-                            <div class="card2">
-                                <h1 class="card2-title">Holiday Events</h1>
-                                <p class="card2-paragraph">
-                                    AniQuinch hosts a limited-time event for each holiday, giving users the opportunity to obtain 
-                                    special merchandise for that occasion. Every user, whether premium or not, has access to the 
-                                    event and additional incentives. There is also an event for every anniversary of the website.
-                                </p>
-                            </div>
-                            <div class="card3">
-                                <h1 class="card3-title">Discount and Sales</h1>
-                                <p class="card3-paragraph">
-                                    AniQuinch is your budget-friendly shopping site; at the beginning and end of each month, 
-                                    all products on the site will be discounted. Discounts from events are stacked to the beginning 
-                                    and end of the month sales, so if a holiday falls at the beginning or end of the month, there will be a 
-                                    significant discount for those goods.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<!-- -------Carousel Product Section------- -->
+				<div class="carousel-wrapper">
+					<div class="carousel-container">
+						<div class="carousel-title">
+							<h3 class="featured-title" >FEATURED PRODUCTS</h3>
+						</div>
+						<div class="carousel" id="carousel">
+							<img class="carousel-image" id="carousel-image1" src="../../images/makima-clothing.png" alt="image">
+							<img class="carousel-image" id="carousel-image2" src="../../images/itadori-figurine.png" alt="image">
+							<img class="carousel-image" id="carousel-image3" src="../../images/sakamoto-days.png" alt="image">
+							<img class="carousel-image" id="carousel-image4" src="../../images/mushoku-case.png" alt="image">
+						</div>
+						<div class="navigation" style="z-index: 5;">
+							<img class="button1" id="button1" src="../../images/left-arrow.png" alt="left arrow">
+							<img class="button2" id="button2" src="../../images/right-arrow.png" alt="right arrow">
+						</div>
+						<div class="carousel-title">
+							<a class="featured-product" href="../products/products.html"><p class="featured-text">VIEW PRODUCTS</p></a>
+						</div>
+					</div>
+				</div>
+				<div class="service-background">
+					<div class="services-margin">
+						<div class="services">
+							<h1 class="services-title">Services</h1>
+							<p class="services-paragraph">
+								Our customer service is available at all times, and our team responds within 24 hours. 
+								This site is free to use, with just a few premium capabilities available, such as free shipping cost, 
+								but the main functions that customers use, such as sorting products by price, reviews, and buck-order, 
+								are available for free. During the holidays, we regularly offer several events that are open to the public. 
+								These events include product freebies, special edition goods, and the possibility to win cash for every purchase 
+								made during the event.
+							</p>
+						</div>
+						<div class="cards-fluid">
+							<div class="cards">
+								<div class="card1">
+									<h1 class="card1-title">Premium Account</h1>
+									<p class="card1-paragraph">
+										AniQuinch provides a premium account service that allows users access to features 
+										such as no delivery cost when purchasing products. A premium account cost user for 10$ per month
+										but in return, gives user access to customizable profile, lesser ads and much more. Premium users 
+										also get the first access to new items and a reserved spot in limited edition merchandise.
+									</p>
+								</div>
+								<div class="card2">
+									<h1 class="card2-title">Holiday Events</h1>
+									<p class="card2-paragraph">
+										AniQuinch hosts a limited-time event for each holiday, giving users the opportunity to obtain 
+										special merchandise for that occasion. Every user, whether premium or not, has access to the 
+										event and additional incentives. There is also an event for every anniversary of the website.
+									</p>
+								</div>
+								<div class="card3">
+									<h1 class="card3-title">Discount and Sales</h1>
+									<p class="card3-paragraph">
+										AniQuinch is your budget-friendly shopping site; at the beginning and end of each month, 
+										all products on the site will be discounted. Discounts from events are stacked to the beginning 
+										and end of the month sales, so if a holiday falls at the beginning or end of the month, there will be a 
+										significant discount for those goods.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
             <!-- -------Footer------- -->
 			<div class="footer-wrapper" id="Contacts">
@@ -149,4 +172,25 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		// Carousel Function
+		const carousel = document.querySelector("#carousel");
+		const images = document.querySelectorAll(".carousel img");
+		const btn1 = document.querySelector("#button1");
+		const btn2 = document.querySelector("#button2");
+		var About = document.querySelector("#About");
+		let counter = 0;
+		btn1.addEventListener('click', function(){
+			if(counter <= 0) return;
+			carousel.style.transition = "transform 1s ease-in-out";
+			counter--;
+			carousel.style.transform = 'translateX(' + (-800 * counter) + 'px)';
+		});
+		btn2.addEventListener('click', function(){
+			if(counter >= images.length - 1) return;
+			carousel.style.transition = "transform 1s ease-in-out";
+			counter++;
+			carousel.style.transform = 'translateX(' + (-800 * counter) + 'px)';
+		});
+	</script>
 </html>
