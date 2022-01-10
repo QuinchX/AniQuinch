@@ -296,6 +296,18 @@ body
 	padding-bottom: 11rem;
 	color: rgb(255, 255, 255);
 }
+.aniquinch-logo
+{
+	height: 5rem;
+	width: 5rem;
+	border-radius: 5rem;
+	cursor: pointer;
+	transition: 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.aniquinch-logo:hover
+{
+	transform: rotate(360deg);
+}
 .footer-content
 {
 	display: flex;
@@ -400,7 +412,7 @@ body
 	display: flex;
 	align-items: center;
 	position: relative;
-	bottom: 14rem;
+	bottom: 20rem;
 }
 /* Carousel */
 .carousel-wrapper
@@ -605,7 +617,7 @@ img
 	height: 11rem;
 	background: #39373b;
 	position: relative;
-	bottom: 10rem;
+	bottom: 15rem;
 	padding: 2rem;
 	color: white;
 	border-radius: 5px;

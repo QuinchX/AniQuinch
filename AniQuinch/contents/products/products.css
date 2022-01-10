@@ -766,6 +766,18 @@ table {
 	padding-bottom: 11rem;
 	color: rgb(255, 255, 255);
 }
+.aniquinch-logo
+{
+	height: 5rem;
+	width: 5rem;
+	border-radius: 5rem;
+	cursor: pointer;
+	transition: 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.aniquinch-logo:hover
+{
+	transform: rotate(360deg);
+}
 .footer-content
 {
 	display: flex;
