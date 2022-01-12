@@ -49,6 +49,110 @@ body
 }
 
 
+/* --------------------ANIQUINCH--------------------- */
+.darken
+{
+	height: 1080px;
+	width: 1920px;
+	position: absolute;
+	background-color: rgba(17, 17, 17, 0.308);
+}
+.video
+{
+	width: 1920px;
+	position: absolute;
+	z-index: -1;
+}
+/* -------Header------- */
+.aniquinch-header-container
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	bottom: 22rem;
+}
+.welcome-title
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 5rem;
+}
+.website-title
+{
+	margin-bottom: 20rem;
+	display: inline-flex;
+	animation: 1s ease-in-out 0s 1 slide;
+}
+@keyframes slide{
+	0%
+	{
+		opacity: 0%;
+		margin-bottom: 10rem;
+	}
+	100%
+	{
+		opacity: 100%;
+		margin-bottom: 20rem;
+	}
+}
+.head-title
+{
+	color: white;
+	font-size: 5rem;
+	font-weight: 900;
+	text-shadow: 3px 3px #000000;
+}
+.aniquinch-title
+{
+	color: white;
+	font-size: 4rem;
+	font-weight: 900;
+	text-shadow: 3px 3px #000000;
+}
+.title-name
+{
+	font-variant: small-caps;
+	font-size: 5.5rem;
+}
+.text
+{
+	margin-left: 1rem;
+	height: 100%;
+	max-height: 6rem;
+	overflow: hidden;
+}
+.text li
+{
+	list-style: none;
+	color: #ff3c6d;
+	position: relative;
+	top: 0;
+	font-size: 4rem;
+	font-weight: 900;
+	text-shadow: 3px 3px #000000;
+	animation: appear 15s steps(1) infinite;
+}
+@keyframes appear 
+{
+	25%
+	{
+		top: -5.95rem;
+		opacity: 100%;
+	}
+	50%
+	{
+		top: -11.90rem;
+		opacity: 100%;
+	}
+	75%
+	{
+		top: -17.80rem;
+		opacity: 100%;
+	}
+}
+
 /* --------------------WEBSITE TITLE--------------------- */
 .main-website-title
 {
@@ -377,6 +481,14 @@ body
     width: 100%;
     background-color:#000000;
     position: relative;
+}
+.aniquinch-footer-wrapper
+{
+	height: 100%;
+	width: 100%;
+	background-color:#000000;
+	position: relative;
+	top: 67rem;
 }
 .footer-wrapper-feedback-login
 {
