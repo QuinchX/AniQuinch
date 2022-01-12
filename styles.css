@@ -402,6 +402,14 @@ body
     position: relative;
     top: 5rem;
 }
+.terms-footer-wrapper
+{
+    height: 100%;
+    width: 100%;
+    background-color:#000000;
+    position: relative;
+    top: 107rem;
+}
 .contacts-wrapper
 {
     display: flex;
@@ -534,6 +542,14 @@ body
     justify-content: center;
     background-color: #000000;
     position: relative;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.terms-carousel-wrapper
+{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
     border-radius: 1rem;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
@@ -1280,6 +1296,13 @@ figure:hover
     position: relative;
     bottom: 20rem;
 }
+.terms-header-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
 .feedback-container
 {
     width: 43rem;
@@ -1754,4 +1777,158 @@ input
     column-rule-width: 0.3rem;
     column-rule-color: #252426;
     text-align: justify;
+}
+
+
+/* --------------------SERVICES--------------------- */
+.services-wrapper
+{
+    display: flex;
+    flex-direction: column;
+}
+.service-background
+{
+    background: url(images/sakura-background.png);
+}
+.services-margin
+{
+    margin-right: 15rem;
+    margin-left: 15rem;
+}
+.services
+{
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-title
+{
+    color: black;
+    font-weight: 900;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+.services-paragraph
+{
+    font-size: larger;
+    color: black;
+    line-height: 2rem;
+    text-align: justify;
+}
+.cards-fluid .cards>*
+{
+    width: 23%;
+}
+.cards
+{
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 15px;
+    background-color: rgb(77, 6, 47);
+    transition: .50s ease-in-out;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.397);
+}
+.card1-title
+{
+    margin: 0%;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.card1-paragraph
+{
+    margin: 0%;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    line-height: 2rem;
+    text-align: justify;
+}
+.card2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 15px;
+    background-color: rgb(77, 6, 47);
+    transition: .50s ease-in-out;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.397);
+}
+.card2-title
+{
+    margin: 0%;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.card2-paragraph
+{
+    margin: 0%;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    line-height: 2rem;
+    text-align: justify;
+}
+.card3
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 15px;
+    background-color: rgb(77, 6, 47);
+    transition: .50s ease-in-out;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.397);
+}
+.card3-title
+{
+    margin: 0%;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.card3-paragraph
+{
+    margin: 0%;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    line-height: 2rem;
+    text-align: justify;
+}
+
+
+/* --------------------TERMS AND CONDITIONS--------------------- */
+.login
+{
+    height: 100%;
+    width: 100%;
+    display: relative;
+    align-items: center;
+}
+.form-box
+{
+    width: 80rem;
+    height: 40rem;
+    position: relative;
+    background: #ffffff;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    overflow: auto;
+    border-radius: 30px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
