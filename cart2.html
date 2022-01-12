@@ -9,17 +9,17 @@
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-			<title>AniQuinch - Log In</title>
+			<title>AniQuinch - Cart</title>
 	</head>
 	<body>
-		<!-- -------Whole Content Wrapper------- -->
+		<!-- -------Navbar------- -->
 		<div class="main-wrapper">
 			<!-- -------Navigation Bar------- -->
 			<div class="container">
 				<nav class="navigation-container">
 					<div class="navbar-margin">
 						<div class="navbar-container">
-							<div class="menu" id="menu">
+							<div class="menu-cart" id="menu-cart">
 								<div class="menu-wrapper">
 									<div class="line1"></div>
 									<div class="line2"></div>
@@ -49,27 +49,24 @@
 											</div>
 											<div class="sidebar-content">
 												<img src="images/product.png" alt="" class="sidebar-icon">
-												<a class="sidebar-button" href="products.html"> Products </a>
+												<a class="sidebar-button" href="products2.html"> Products </a>
 											</div>
 											<div class="sidebar-content">
-												<img src="images/login.png" alt="" class="sidebar-icon">
+												<img src="images/register.png" alt="" class="sidebar-icon">
 												<a class="sidebar-button" href="register.html"> Register </a>
 											</div>
 											<div class="sidebar-content">
 												<img src="images/conversation.png" alt="" class="sidebar-icon">
-												<a class="sidebar-button" href="faq/faq.html"> FAQ </a>
+												<a class="sidebar-button" href="faq.html"> FAQ </a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="links">
-								<a class="links-button" href = "index.html">Home</a>
+                                <a class="links-button" href = "index.html">Home</a>
+								<a class="links-button" href = "products2.html"> Products</a>
 								<h1 class="main-website-title">AniQuinch</h1>
-								<a class="links-button" href = "products.html"> Products</a>
-							</div>
-							<div class="register">
-								<a class="register-button" href = "register.html">Register</a>
 							</div>
 						</div>
 					</div>
@@ -81,21 +78,55 @@
 							<a href="index.html" class="breadcrumb-link">Home</a>
 						</li>
 						<li class="breadcrumb">
-							<a href="register.html" class="breadcrumb-link breadcrumb-link">Register</a>
+							<a href="products2.html" class="breadcrumb-link">Products</a>
 						</li>
-						<li class="breadcrumb">
-							<a href="login.html" class="breadcrumb-link breadcrumb-link--active">Login</a>
+							<li class="breadcrumb">
+							<a href="cart.html" class="breadcrumb-link breadcrumb-link--active">Cart</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<!-- -------Background------- -->
-			<div class="background"></div>
-			<div class="bg-image">
-				<img src="images/background.jpg" alt="">
+		</div>
+		<!-- -------Add to Cart------- -->
+        <div class="cart-main-wrapper">
+			<!-- -------Carousel Product Section------- -->
+			<div class="carousel-wrapper">
+				<div class="carousel-container">
+					<div class="carousel-title">
+						<h3 class="featured-title" >FEATURED PRODUCTS</h3>
+					</div>
+					<div class="carousel" id="carousel">
+						<img class="carousel-image" id="carousel-image1" src="images/makima-clothing.png" alt="image">
+						<img class="carousel-image" id="carousel-image2" src="images/itadori-figurine.png" alt="image">
+						<img class="carousel-image" id="carousel-image3" src="images/sakamoto-days.png" alt="image">
+						<img class="carousel-image" id="carousel-image4" src="images/mushoku-case.png" alt="image">
+					</div>
+					<div class="navigation" style="z-index: 5;">
+						<img class="button1" id="button1" src="images/left-arrow.png" alt="left arrow">
+						<img class="button2" id="button2" src="images/right-arrow.png" alt="right arrow">
+					</div>
+					<div class="carousel-title">
+						<a class="featured-product" href="products2.html"><p class="featured-text">VIEW PRODUCTS</p></a>
+					</div>
+				</div>
 			</div>
-			<!-- -------Footer------- -->
-			<div class="footer-wrapper-feedback-login" id="Contacts">
+            <div class="cart-wrapper">
+                <div class="cart-title-wrapper">
+                    <p class="cart-title">Shopping Cart</p>
+                </div>
+                <div class="cart-container">
+                    <img src="images/qiqi-tired-of-u.png" alt="qiqi-tired" class="qiqi">
+                    <p class="text">Your cart is currently empty . . .</p>
+                    <p class="text1">Add something to your cart</p>
+                    <div class="continue-button">
+                        <a class="continue" href="products2.html">continue shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- -------Footer Section------- -->
+		<div class="footer-main-wrapper">
+			<div class="footer-wrapper" id="Contacts">
 				<footer class="contacts-wrapper">
 					<div class="footer-content">
 						<img src="images/AniQuinchLogo.png" alt="AniQuinch Logo" class="aniquinch-logo">
@@ -109,61 +140,6 @@
 						<a href="https://www.instagram.com/aniquinch/" target="blank"><img class="social-media3" src="images/instagram.png" alt=""></a>
 					</div>
 				</footer>
-			</div>
-			<!-- -------Main Page Contents------- -->
-			<div class="header-content-wrapper">
-				<div class="header-container" id="Home">
-					<!-- -------Login------- -->
-					<div class="form-box-login">
-						<div class="title-box">							
-							<div class="title1">
-								<h3>Log In</h3>
-							</div>
-						</div>
-						<form id="register" class="input-form">
-							<input type="text" class="input-area" placeholder="Username">
-							<input type="password" class="input-area" placeholder="Enter Password">
-							<div class="check-boxstyle">
-								<input type="checkbox" class="check-box">Remember Username
-								<br>
-								<input type="checkbox" class="check-box">Remember Password
-							</div>
-							<a href = "products2.html" class="submit-button">Log In</a>
-						</form>
-						<div class="media-register">
-							<h6>or Log In using the following Media</h6>
-						</div>
-						<div class="social-icons">
-							<a href="https://www.facebook.com/" target="popup" onclick="window.open('https://www.facebook.com/','popup','width=600,height=600'); return false;">
-								<img src="images/fb-icon.png"></a>
-							<a href="https://accounts.google.com/servicelogin" target="popup" onclick="window.open('https://accounts.google.com/servicelogin','popup','width=600,height=600'); return false;">
-								<img src="images/google-icon.png"></a>
-							<a href="https://twitter.com/login?lang=en" target="popup" onclick="window.open('https://twitter.com/login?lang=en','popup','width=600,height=600'); return false;">
-								<img src="images/twitter-icon.png"></a>
-						</div>
-					</div>
-				</div>
-				<!-- -------Carousel Product Section------- -->
-				<div class="carousel-wrapper-feedback">
-					<div class="carousel-container-feedback">
-						<div class="carousel-title">
-							<h3 class="featured-title" >FEATURED PRODUCTS</h3>
-						</div>
-						<div class="carousel" id="carousel">
-							<img class="carousel-image1" id="carousel-image1" src="images/makima-clothing.png" alt="image">
-							<img class="carousel-image2" id="carousel-image2" src="images/itadori-figurine.png" alt="image">
-							<img class="carousel-image3" id="carousel-image3" src="images/sakamoto-days.png" alt="image">
-							<img class="carousel-image4" id="carousel-image4" src="images/mushoku-case.png" alt="image">
-						</div>
-						<div class="navigation" style="z-index: 5;">
-							<img class="button1" id="button1" src="images/left-arrow.png" alt="left arrow">
-							<img class="button2" id="button2" src="images/right-arrow.png" alt="right arrow">
-						</div>
-						<div class="carousel-title">
-							<a class="featured-product" href="products/products.html"><p class="featured-text">VIEW PRODUCTS</p></a>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</body>
@@ -179,13 +155,13 @@
 			if(counter <= 0) return;
 			carousel.style.transition = "transform 1s ease-in-out";
 			counter--;
-			carousel.style.transform = 'translateX(' + (-640 * counter) + 'px)';
+			carousel.style.transform = 'translateX(' + (-800 * counter) + 'px)';
 		});
 		btn2.addEventListener('click', function(){
 			if(counter >= images.length - 1) return;
 			carousel.style.transition = "transform 1s ease-in-out";
 			counter++;
-			carousel.style.transform = 'translateX(' + (-640 * counter) + 'px)';
+			carousel.style.transform = 'translateX(' + (-800 * counter) + 'px)';
 		});
 	</script>
 </html>
