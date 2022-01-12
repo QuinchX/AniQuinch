@@ -1504,7 +1504,7 @@ input
 
 
 /* --------------------LOGIN--------------------- */
-.form-box
+.form-box-login
 {
     width: 23.75rem;
     height: 32.5rem;
@@ -1665,7 +1665,7 @@ input
     color: rgb(255, 255, 255);
     text-shadow: 2.5px 2.5px #ff678d;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 2rem;
     text-align: center;
 }
@@ -1748,7 +1748,7 @@ input
     margin: 2rem;
     padding: 30px;
     border-radius: 1rem;
-    background-color: #ffbdce;
+    background-color: rgb(128, 32, 88);
     box-shadow: 0px 0px 5px black;
     transition: .50s ease-in-out;
 }
@@ -1759,7 +1759,7 @@ input
     margin: 2rem;
     padding: 30px;
     border-radius: 1rem;
-    background-color: #ffbdce;
+    background-color: rgb(128, 32, 88);
     box-shadow: 0px 0px 5px black;
     transition: .50s ease-in-out;
 }
@@ -1770,7 +1770,7 @@ input
     margin: 2rem;
     padding: 30px;
     border-radius: 1rem;
-    background-color: #ffbdce;
+    background-color: rgb(128, 32, 88);
     box-shadow: 0px 0px 5px black;
     transition: .50s ease-in-out;
 }
@@ -1782,7 +1782,7 @@ input
     margin: 2rem;
     padding: 30px;
     border-radius: 1rem;
-    background-color: #ffbdce;
+    background-color: rgb(128, 32, 88);
     box-shadow: 0px 0px 5px black;
     transition: .50s ease-in-out;
 }
