@@ -417,9 +417,9 @@ body
 }
 .user-icon:hover
 {
-    animation: .50s cubic-bezier(1, -0.15, 0, 0.97) 0s 1 rotate;
+    animation: .50s cubic-bezier(1, -0.15, 0, 0.97) 0s 1 drotate;
 }
-@keyframes rotate{
+@keyframes drotate{
     0%
     {
         transform: rotate3d(1,1,1, 0deg);
