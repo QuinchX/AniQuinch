@@ -790,7 +790,7 @@ img
 }
 .about-background
 {
-    background: url(images/sakura-background.png);
+    background: url(images/sakura-background2.png);
 }
 .about-margin
 {
@@ -808,7 +808,7 @@ img
     margin-top: 5rem;
     padding: 5rem;
     border-radius: 15px;
-    background-color: rgb(255, 229, 242);
+    background-color: rgb(255, 241, 248);
     transition: .50s ease-in-out;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.397);
 }
@@ -823,11 +823,12 @@ img
 .about-title1
 {
     margin: 0%;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
     color: black;
     font-weight: 900;
     text-shadow: 0px 0px 1px black;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
 }
 .about-paragraph
@@ -986,7 +987,144 @@ img
 {
     opacity: 100%;
 }
+.staff
+{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    position: relative;
+    right: 12rem;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 241, 248);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: .50s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.staff:hover
+{
+    right: 0rem;
+}
+.staff-profile
+{
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 50%;
+}
+.staff-name
+{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 
+}
+.staff-position
+{
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    margin-right: 75%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20rem;
+    background-color: rgb(105, 0, 53);
+    color: white;
+}
+.staff-description
+{
+    font-size: 1rem;
+}
+.staff-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+}
+.staff-contacts
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.staff-email
+{
+    margin-left: 5rem;
+}
+.staff2
+{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    position: relative;
+    left: 12rem;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(255, 241, 248);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: .50s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.staff2:hover
+{
+    left: 0rem;
+}
+.staff2-profile
+{
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 50%;
+}
+.staff2-name
+{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.staff2-position
+{
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    margin-left: 75%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20rem;
+    background-color: rgb(105, 0, 53);
+    color: white;
+}
+.staff2-description
+{
+    font-size: 1rem;
+    text-align: right;
+}
+.staff2-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+}
+.staff2-contacts
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+.staff2-email
+{
+    margin-left: 5rem;
+}
 
 /* --------------------PRODUCT CATEGORY PAGE--------------------- */
 .product-main-wrapper
