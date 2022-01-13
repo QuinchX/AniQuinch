@@ -402,6 +402,35 @@ body
 }
 
 
+/* --------------------USER BUTTON--------------------- */
+.user
+{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.user-icon
+{
+    width: 2rem;
+    height: 2rem;
+    filter: invert();
+}
+.user-icon:hover
+{
+    animation: .50s cubic-bezier(1, -0.15, 0, 0.97) 0s 1 rotate;
+}
+@keyframes rotate{
+    0%
+    {
+        transform: rotate3d(1,1,1, 0deg);
+    }
+    100%
+    {
+        transform: rotate3d(1,1,1, 360deg);
+    }
+}
+
+
 /* --------------------REGISTER BUTTON--------------------- */
 .register
 {
