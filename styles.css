@@ -57,6 +57,13 @@ body
 	position: absolute;
 	background-color: rgba(17, 17, 17, 0.308);
 }
+.user-darken
+{
+	height: 100px;
+	width: 1920px;
+	position: absolute;
+	background-color: rgba(17, 17, 17, 0.308);
+}
 .video
 {
 	width: 1920px;
@@ -542,6 +549,12 @@ body
     background-color:#000000;
     position: relative;
     top: 5rem;
+}
+.user-footer-wrapper
+{
+    height: 100%;
+    width: 100%;
+    background-color:#000000;
 }
 .terms-footer-wrapper
 {
@@ -2230,4 +2243,225 @@ input
     overflow: auto;
     border-radius: 30px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --------------------USER--------------------- */
+.profile-main-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: 1920px;
+    height: 1210px;
+    background-image: url(images/background.jpg);
+}
+.profile-container
+{
+    width: 75rem;
+    height: 100%;
+    margin-top: 7.8rem;
+    z-index: 1;
+    background: linear-gradient(90deg, rgb(170, 45, 82) 29.4%, rgb(255, 233, 238) 29.4%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px black;
+}
+.profile-banner
+{
+    width: 100%;
+    height: 15rem;
+    filter: brightness(130%);
+    background-color: rgb(172, 172, 172);
+    transition: .75s ease-in-out;
+    cursor: pointer;
+}
+.profile-button
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .45s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+.profile-nav
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa3b9;
+    border-radius: 50rem;
+    margin-top: 25rem;
+    padding: 1rem 0rem 1rem 0rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    transition: .45s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+.profile-nav:hover
+{
+    background-color: rgb(255, 233, 238);
+}
+.profile-nav:hover .profile-button
+{
+    color: rgb(131, 24, 56);
+}
+.profile-nav:hover .profile-button-image
+{
+    filter: none;
+}
+.profile-banner:hover
+{
+    filter: brightness(100%);
+}
+.profile-identity
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem;
+}
+.profile-whole
+{
+    display: flex;
+    flex-direction: row;
+    border-width: .5rem;
+}
+.profile-left
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 8.3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.profile-right
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+.profile-picture
+{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 8rem;
+    border: solid rgb(122, 10, 44);
+    border-width: .5rem;
+    filter: brightness(130%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.329);
+    cursor: pointer;
+}
+.profile-picture:hover
+{
+    filter: brightness(100%);
+}
+.profile-name
+{
+    text-align: center;
+    color: white;
+}
+.user-profile-name
+{
+    display: flex;
+    flex-direction: row;
+}
+.profile-name
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.user-input
+{
+    width: 18rem;
+    outline: none;
+    border: .15rem solid #ffa3b9;
+    box-shadow: 0px 0px 2px black;
+    border-radius: .3rem;
+    transition: .25s ease-in-out;
+}
+.user-input:focus
+{
+    border-color: #cf264e;
+    box-shadow: 0px 0px 5px #ff6d8f;
+}
+.user-input-name
+{
+    width: 18rem;
+    margin-right: 9rem;
+    outline: none;
+    border: .15rem solid #ffa3b9;
+    box-shadow: 0px 0px 2px black;
+    border-radius: .3rem;
+    transition: .25s ease-in-out;
+}
+.user-input-name:focus
+{
+    border-color: #cf264e;
+    box-shadow: 0px 0px 5px #ff6d8f;
+}
+.user-input-bio
+{
+    width: 96.1%;
+    height: 25%;
+    outline: none;
+    border: .15rem solid #ffa3b9;
+    box-shadow: 0px 0px 2px black;
+    border-radius: .3rem;
+    padding: .75rem;
+    transition: .25s ease-in-out;
+}
+.user-input-bio:focus
+{
+    border-color: #cf264e;
+    box-shadow: 0px 0px 5px #ff6d8f;
+}
+.user-input-date
+{
+    width: 12.7rem;
+    outline: none;
+    border: .15rem solid #ffa3b9;
+    background-color: #ffa3b9;
+    color: white;
+    box-shadow: 0px 0px 2px black;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+::-webkit-calendar-picker-indicator
+{
+    filter: invert();
+    cursor: pointer;
+}
+.user-input-date:focus
+{
+    border-color: #cf264e;
+    box-shadow: 0px 0px 5px #ff6d8f;
+    background-color: #cf264e;
+}
+.user-input-date:hover
+{
+    background-color: #cf264e;
+    border-color: #cf264e;
+}
+.profile-username
+{
+    font-size: 1.1rem;
+    color: white;
+}
+.user-title
+{
+    font-size: 3rem;
+    color: rgb(122, 10, 44);
+    font-weight: bold;
+    margin: 2rem 0rem 1.5rem 0rem;
+}
+.user-subtitles
+{
+    font-size: 1rem;
+    color: rgb(122, 10, 44);
+    margin: 1rem 0rem 1rem 0;
 }
