@@ -172,7 +172,7 @@ body
 }
 .navigation-container
 {
-    width: 120rem;
+    width: 100%;
     position: fixed;
     z-index: 990;
     background-color: #ff3c6d;
@@ -519,7 +519,6 @@ body
 .aniquinch-footer-wrapper
 {
 	height: 34rem;
-	width: 120rem;
 	background-color:#000000;
 	position: relative;
 	top: 67rem;
@@ -2542,7 +2541,7 @@ input
     background-color: #e2cdec;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 2px 10px #cc9de4;
+    box-shadow: 0px 0px 10px #58127a;
     border-radius: 1rem;
     width: 35rem;
     height: 35rem;
@@ -2556,6 +2555,13 @@ input
 	font-weight: 600;
 	padding-top: 2rem;
 	padding-left: 2rem;
+}
+#transact-select
+{
+    cursor: pointer;
+    outline: none;
+    border-radius: .5rem;
+    border: #9f61be solid;
 }
 #transaction-table
 {
@@ -2624,7 +2630,7 @@ input
 {
     display: flex;
 	background-color: #ff76a4;
-    border-radius: .5rem;
+    cursor: pointer;
     transition: .25s ease-in-out;
     padding: 1rem;
 	height: 3rem;
