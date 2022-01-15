@@ -205,7 +205,6 @@ body
 .menu-cart
 {
     cursor: pointer;
-    margin-right: 44rem;
 }
 .line1
 {
@@ -1714,6 +1713,11 @@ input
 {
     padding: .3rem;
     font-size: .9rem;
+}
+#feedback
+{
+    left: 12rem;
+	top: 13.3rem;
 }
 
 
