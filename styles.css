@@ -2537,29 +2537,30 @@ input
 	position: absolute;
 	margin-top: 28.9rem;
 	margin-left: 80rem;
+    cursor: pointer;
 	z-index: 1;
 	filter: saturate(95%);
 }
 .hide-qiqi
 {
-  display: none;
-  z-index: 100;
+    display: none;
+    z-index: 100;
 }
 .transaction-qiqi:hover + .hide-qiqi {
-  position: absolute;
-  display: block;
-  color: black;
-  font-style: italic;
-  background-color: white;
-  border: 3px solid #9f61be;
-  border-radius: 1rem;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
-  z-index: 2;
-  margin-top: 31.5rem;
-  margin-left: 67rem;
+    position: absolute;
+    display: block;
+    color: black;
+    font-style: italic;
+    background-color: white;
+    border: 3px solid #9f61be;
+    border-radius: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    z-index: 2;
+    margin-top: 31.5rem;
+    margin-left: 67rem;
 }
 .transaction-order-container
 {
@@ -2569,9 +2570,9 @@ input
     box-shadow: 0px 0px 10px #58127a;
     border-radius: 1rem;
     width: 35.2rem;
-    height: 35rem;
+    height: 35.5rem;
 	margin-left: 50rem;
-	margin-top: 5rem;
+	margin-top: 3rem;
 	margin-bottom: 2rem;
 }
 .transaction-order-text
@@ -2657,11 +2658,11 @@ input
 
 	background-color: #ff76a4;
     cursor: pointer;
-    transition: .25s ease-in-out;
+    transition: .25s cubic-bezier(0.51, 0.29, 0.4, 0.78);
     padding: 1rem;
 	height: 3rem;
 	width: 20rem;
-	margin-top: 2rem;
+	margin-top: 3rem;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -2681,7 +2682,7 @@ input
 .transaction-checkout-container:hover
 {
     background-color: #ff0055;
-	width: 33rem;
+	width: 33.2rem;
 	border-radius: 0rem;
 }
 .transaction-container3
