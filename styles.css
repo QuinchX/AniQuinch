@@ -29,15 +29,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.main-wrapper
-{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    align-content: center;
 }
 .main-wrapper-terms
 {
@@ -77,7 +69,7 @@ body
 	flex-direction: row;
 	align-items: center;
 	position: relative;
-	bottom: 22rem;
+	bottom: 24rem;
 }
 .welcome-title
 {
@@ -85,6 +77,7 @@ body
 	flex-direction: column;
 	align-items: center;
 	margin-right: 5rem;
+    padding-left: 2rem;
 }
 .website-title
 {
@@ -179,7 +172,7 @@ body
 }
 .navigation-container
 {
-    width: 100%;
+    width: 120rem;
     position: fixed;
     z-index: 990;
     background-color: #ff3c6d;
@@ -469,7 +462,7 @@ body
 /* --------------------BREADCRUMB--------------------- */
 .breadcrumb-container
 {
-    width: 100%;
+    width: 200rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -511,17 +504,22 @@ body
 
 
 /* --------------------FOOTER--------------------- */
+.footer-main-wrapper
+{
+    display: flex;
+    justify-content: center;
+}
 .footer-wrapper
 {
-    height: 100%;
-    width: 100%;
+    height: 34rem;
+    width: 200rem;
     background-color:#000000;
     position: relative;
 }
 .aniquinch-footer-wrapper
 {
-	height: 100%;
-	width: 100%;
+	height: 34rem;
+	width: 120rem;
 	background-color:#000000;
 	position: relative;
 	top: 67rem;
@@ -670,6 +668,23 @@ body
 {
     display: flex;
     justify-content: center;
+    background-color: #000000;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.carousel-user-wrapper
+{
+    display: flex;
+    justify-content: center;
+    top: 7.8rem;
+    position: relative;
+    background-color: #000000;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.service-carousel-wrapper
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 7.8rem;
     background-color: #000000;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
@@ -1620,7 +1635,7 @@ figure:hover
     width: 43rem;
     height: 38rem;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 16rem;
     margin-right: 2rem;
     border-radius: 2%;
     background-color: #ffd7ed;
@@ -1708,7 +1723,7 @@ input
 {
     width: 23.75rem;
     height: 32.5rem;
-    margin-left: 10rem;
+    margin-left: 24.7rem;
     margin-right: 15rem;
     background: #fff;
     border-radius: 5%;
