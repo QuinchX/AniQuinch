@@ -1501,7 +1501,14 @@ figure:hover
     margin-right: 20rem;
     margin-left: 20rem;
 }
-
+.faq-qiqi
+{
+	width: auto;
+	height: auto;
+	position: absolute;
+	right: 28rem;
+	top: 55.3rem;
+}
 .faq-title
 {
     color: black;
