@@ -1728,6 +1728,14 @@ input
     background: #fff;
     border-radius: 5%;
 }
+.form-box-register
+{
+    width: 23.75rem;
+    height: 32.5rem;
+    margin-right: 15rem;
+    background: #fff;
+    border-radius: 5%;
+}
 .title1
 {
     margin-top: 2rem;
