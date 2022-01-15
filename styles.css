@@ -2493,7 +2493,6 @@ input
     margin: 1rem 0rem 1rem 0;
 }
 
-
 /* --------------------TRANSACTION-------------------- */
 .transaction-main-wrapper
 {
@@ -2541,6 +2540,27 @@ input
 	z-index: 1;
 	filter: saturate(95%);
 }
+.hide-qiqi
+{
+  display: none;
+  z-index: 100;
+}
+.transaction-qiqi:hover + .hide-qiqi {
+  position: absolute;
+  display: block;
+  color: black;
+  font-style: italic;
+  background-color: white;
+  border: 3px solid #9f61be;
+  border-radius: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  z-index: 2;
+  margin-top: 31.5rem;
+  margin-left: 67rem;
+}
 .transaction-order-container
 {
     background-color: #e2cdec;
@@ -2567,6 +2587,7 @@ input
     outline: none;
     border-radius: .5rem;
     border: #9f61be solid;
+	text-align: center;
 }
 #transaction-table
 {
@@ -2613,11 +2634,11 @@ input
 	display: flex;
 	height: 3rem;
 	margin-top: 1.3rem;
-	margin-left: 7.95rem;
+	margin-left: 8rem;
 	background-color: #e7e6e8;
 	padding-top: 1.5rem;
-	padding-left: 3.3rem;
-	padding-right: 3.3rem;
+	padding-left: 5rem;
+	padding-right: 4.3rem;
 	padding-bottom: 1.5rem;
 }
 .transact-method
@@ -2633,50 +2654,136 @@ input
 }
 .transaction-checkout-container
 {
-    display: flex;
+
 	background-color: #ff76a4;
     cursor: pointer;
     transition: .25s ease-in-out;
     padding: 1rem;
 	height: 3rem;
+	width: 20rem;
 	margin-top: 2rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+	border: 0.5rem;
+	border-radius: 4rem;
 }
 .transaction-checkout-button
 {
-    display: flex;
+    display: block;
 	color: #ffffff;
 	font-size: 2rem;
 	font-weight: 600;
-	margin-left: 10rem;
-	margin-right: 10rem;
+	margin-left: auto;
+	margin-right: auto;
 	letter-spacing: 0.3rem;
 }
 .transaction-checkout-container:hover
 {
     background-color: #ff0055;
+	width: 33rem;
+	border-radius: 0rem;
 }
 .transaction-container3
 {
-	background-color: white;
+	background-color: #e2cdec;
     display: flex;
 	position: absolute;
     flex-direction: column;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 10px #58127a;
     border-radius: 1rem;
-    width: 44rem;
+    width: 42rem;
     height: 30rem;
 	margin-top: 5rem;
-	margin-right: 42.5rem;
+	margin-right: 40rem;
+}
+.transaction-container3-text
+{
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 2rem;
+}
+.transaction-image-container
+{
+	position: absolute;
+	background-color: #cc9de4;
+	width: 16rem;
+	height: 16rem;
+	margin-left: 5rem;
+	margin-top: 7rem;
+	border-radius: 2rem;
+	box-shadow: 0px 0px 10px #58127a;
+}
+.transaction-image-container:hover
+{
+	box-shadow: 0px 0px 20px #58127a;
+	transition: .8s ease;
+}
+.transaction-product-image
+{
+	display: flex;
+	width: 90%;
+	margin: 1rem;
+}
+.transaction-container3-text1
+{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-top: 2rem;
+	margin-left: 23rem;
+}
+.transaction-container3-text2
+{
+	display: flex;
+    font-size: 1.5rem;
+	font-weight: 500;
+	font-family: sans-serif;
+	line-height: 2.5rem;
+	margin-left: 23rem;
+	margin-top: 0.5rem;
+
+}
+.transaction-voucher
+{
+	margin-top: 5.5rem;
+	margin-left: 7.5rem;
+	
+}
+.voucher-input[type=text]
+{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+.voucher-input[type=text]:focus
+{
+  border: 3px solid #9f61be ;
+}
+.voucher-text
+{
+	font-size: 1.5rem;
+	padding-right: 1rem;
+	font-style: italic;
+	
 }
 .transaction-continue-button
 {
     background-color: #ff76a4;
-    border-radius: .5rem;
+    border-radius: 1.8rem;
     display: flex;
     margin-top: 36.5rem;
-	margin-right: 44rem;
+	margin-right: 40rem;
     transition: .25s ease-in-out;
-    padding: 1rem;
+    padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 	position: absolute;
 }
 .transaction-continue-button:hover
@@ -2707,3 +2814,5 @@ input
 {
     width: 100%;
 }
+
+
