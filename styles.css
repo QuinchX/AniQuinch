@@ -1925,6 +1925,10 @@ input
 {
     box-shadow: 0px 0px 15px #ff5681;
 }
+#product-figure:hover .product-img
+{
+    transform: scale(110%);
+}
 .mainproduct-img-background
 {
     width: 100%;
@@ -2035,6 +2039,24 @@ input
     font-size: 1.5rem;
     transition: .50s ease-in-out;
 }
+.desc2
+{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: .50s ease-in-out;
+    padding-top: 1rem;
+}
+.desc3
+{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: .50s ease-in-out;
+    padding-top: 1.9rem;
+}
 
 .category1:hover
 {
@@ -2061,7 +2083,7 @@ input
     cursor: pointer;
     background-color: #ffffff;
 }
-.category3:hover .desc1
+.category3:hover .desc2
 {
     color: #000000;
 }
@@ -2071,7 +2093,7 @@ input
     cursor: pointer;
     background-color: #ffffff;
 }
-.category4:hover .desc1
+.category4:hover .desc3
 {
     color: #000000;
 }
@@ -2079,18 +2101,22 @@ input
 .category1:hover .category-img
 {
     filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+    transform: scale(110%);
 }
 .category2:hover .category-img
 {
     filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+    transform: scale(110%);
 }
 .category3:hover .category-img
 {
     filter: drop-shadow(0px 0px 5px black);
+    transform: scale(110%);
 }
 .category4:hover .category-img
 {
     filter: drop-shadow(0px 0px 5px black);
+    transform: scale(110%);
 }
 
 
