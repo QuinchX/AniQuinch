@@ -2488,3 +2488,211 @@ input
     color: rgb(122, 10, 44);
     margin: 1rem 0rem 1rem 0;
 }
+
+
+/* --------------------TRANSACTION-------------------- */
+.transaction-main-wrapper
+{
+    margin-top: 7.7rem;
+}
+.transaction-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10rem;
+    background-image: url(images/sakura-background.jpg);
+    filter: saturate(60%);
+}
+.transaction-title-wrapper
+{
+    margin: 1rem;
+}
+.transaction-title
+{
+    color: #ffffff;
+    text-shadow: 2.5px 4px #ff3c6d;
+    -webkit-text-stroke-width: .1rem;
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+.transaction-container
+{
+    background-color: #ffd8e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 1rem;
+    width: 100rem;
+    height: 42rem;
+}
+.transaction-qiqi
+{
+	height: 22%;
+	width: 15%;
+	position: absolute;
+	margin-top: 28.9rem;
+	margin-left: 80rem;
+	z-index: 1;
+	filter: saturate(95%);
+}
+.transaction-order-container
+{
+    background-color: #e2cdec;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 10px #cc9de4;
+    border-radius: 1rem;
+    width: 35rem;
+    height: 35rem;
+	margin-left: 50rem;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+}
+.transaction-order-text
+{
+	font-size: 2rem;
+	font-weight: 600;
+	padding-top: 2rem;
+	padding-left: 2rem;
+}
+#transaction-table
+{
+    font-family: sans-serif;
+    border-collapse: separate;
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+	font-weight: 500;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 0.5rem;
+}
+#transaction-table .transact-table1 
+{
+    padding: 8px;
+
+}
+#transaction-table .transact-table1-row
+{ 
+	padding-top: 0.2rem;
+}
+.transact-table1-sf
+{
+	text-align: right;
+}
+.transact-table2
+{
+	font-size: 2.5rem;
+}
+.transaction-order-container2
+{
+	background-color: #cc9de4;
+	display: flex;
+    height: 8.5rem;
+	width: 17rem;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+	box-shadow: 0px -10px 13px -10px black;
+
+}
+.transaction-select-container
+{
+	display: flex;
+	height: 3rem;
+	margin-top: 1.3rem;
+	margin-left: 7.95rem;
+	background-color: #e7e6e8;
+	padding-top: 1.5rem;
+	padding-left: 3.3rem;
+	padding-right: 3.3rem;
+	padding-bottom: 1.5rem;
+}
+.transact-method
+{
+	font-weight: bold;
+}
+.transaction-payment-container
+{
+	display: flex;
+	font-size: 1.5rem;
+	margin-top: 2.3rem;
+	margin-left: 2rem;
+}
+.transaction-checkout-container
+{
+    display: flex;
+	background-color: #ff76a4;
+    border-radius: .5rem;
+    transition: .25s ease-in-out;
+    padding: 1rem;
+	height: 3rem;
+	margin-top: 2rem;
+}
+.transaction-checkout-button
+{
+    display: flex;
+	color: #ffffff;
+	font-size: 2rem;
+	font-weight: 600;
+	margin-left: 10rem;
+	margin-right: 10rem;
+	letter-spacing: 0.3rem;
+}
+.transaction-checkout-container:hover
+{
+    background-color: #ff0055;
+}
+.transaction-container3
+{
+	background-color: white;
+    display: flex;
+	position: absolute;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 1rem;
+    width: 44rem;
+    height: 30rem;
+	margin-top: 5rem;
+	margin-right: 42.5rem;
+}
+.transaction-continue-button
+{
+    background-color: #ff76a4;
+    border-radius: .5rem;
+    display: flex;
+    margin-top: 36.5rem;
+	margin-right: 44rem;
+    transition: .25s ease-in-out;
+    padding: 1rem;
+	position: absolute;
+}
+.transaction-continue-button:hover
+{
+    background-color: #ff0055;
+}
+.transaction-continue
+{
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+	font-weight: bold;
+	letter-spacing: 0.05rem;
+}
+.transaction-continue::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    border-radius: 420px;
+    transition: width .75s cubic-bezier(1, -0.15, 0, 0.97);
+}
+.transaction-continue:hover::after
+{
+    width: 100%;
+}
