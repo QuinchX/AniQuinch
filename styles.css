@@ -1630,11 +1630,11 @@ figure:hover
 }
 .feedback-container
 {
-    width: 43rem;
+    width: 40rem;
     height: 38rem;
     margin-top: 1rem;
-    margin-left: 16rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+	margin-right: -1rem;
     border-radius: 2%;
     background-color: #ffd7ed;
     box-shadow: 0px 0px 0.5rem black;
@@ -1650,7 +1650,7 @@ figure:hover
 .feedback
 {
     padding: .3rem;
-    width: 42.4rem;
+    width: 39rem;
     height: 12.5rem;
     position: absolute;
     font-size: .9rem;
@@ -1674,7 +1674,7 @@ figure:hover
 }
 .textbar
 {
-    width: 20rem;
+    width: 18.5rem;
     height: 2rem;
     border-style: solid;
     border-color: #000000;
@@ -1717,7 +1717,7 @@ input
 #feedback
 {
     left: 12rem;
-	top: 13.3rem;
+	top: 12.3rem;
 }
 
 
@@ -1726,7 +1726,7 @@ input
 {
     width: 23.75rem;
     height: 32.5rem;
-    margin-left: 24.7rem;
+    margin-left: 4rem;
     margin-right: 15rem;
     background: #fff;
     border-radius: 5%;
