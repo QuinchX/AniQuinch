@@ -2648,6 +2648,22 @@ input
 {
 	text-align: right;
 }
+.transact-table1-sf2
+{
+	text-align: right;
+	font-size: 1rem;
+	font-style: italic;
+	color: black;
+	text-shadow: 0 0 11px red;
+}
+.transact-table1-sf3
+{
+	text-align: right;
+	font-size: 0.85rem;
+	font-style: italic;
+	color: black;
+	text-shadow: 0 0 11px red;
+}
 .transact-table2
 {
 	font-size: 2.5rem;
@@ -2764,13 +2780,13 @@ input
 {
 	font-size: 1.5rem;
 	font-weight: bold;
-	margin-top: 2rem;
+	margin-top: 1.5rem;
 	margin-left: 23rem;
 }
 .transaction-container3-text2
 {
 	display: flex;
-    font-size: 1.5rem;
+    	font-size: 1.5rem;
 	font-weight: 500;
 	font-family: sans-serif;
 	line-height: 2.5rem;
@@ -2780,9 +2796,9 @@ input
 }
 .transaction-voucher
 {
-	margin-top: 5.5rem;
-	margin-left: 7.5rem;
-	
+	position: absolute;
+	bottom: 1.5rem;
+	left: 7.5rem;
 }
 .voucher-input[type=text]
 {
