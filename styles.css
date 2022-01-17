@@ -2683,12 +2683,12 @@ input
 {
 	background-color: #cc9de4;
 	display: flex;
-    height: 8.5rem;
+    	height: 8.5rem;
 	width: 17rem;
 	margin-top: 0rem;
 	margin-bottom: 0rem;
-	box-shadow: 0px -10px 13px -10px black;
-
+	box-shadow: 0px 11px 0.8rem -10px #58127a,
+		    0px -11px 0.8rem -10px #58127a;
 }
 .transaction-select-container
 {
@@ -2804,6 +2804,16 @@ input
 	margin-left: 23rem;
 	margin-top: 0.5rem;
 
+}
+#transact-select2
+{
+    	cursor: pointer;
+    	outline: none;
+    	border-radius: .5rem;
+    	border: #9f61be solid;
+	text-align: center;
+	width: 4rem;
+	margin-left: 0.5rem;
 }
 .transaction-voucher
 {
