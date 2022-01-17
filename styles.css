@@ -1673,10 +1673,16 @@ figure:hover
     height: 12.5rem;
     position: absolute;
     font-size: .9rem;
-    border-style: solid;
-    border-color: #000000;
-    border-width: 0.1rem;
-    border-radius: 0.3rem;
+    outline: none;
+    border: .15rem solid #ffa3b9;
+    box-shadow: 0px 0px 2px black;
+    border-radius: .3rem;
+    transition: .25s ease-in-out;
+}
+.feedback:focus
+{
+    border-color: #cf264e;
+    box-shadow: 0px 0px 5px #ff6d8f;
 }
 .feedback-title
 {
@@ -1690,15 +1696,23 @@ figure:hover
 {
     margin-left: 1.9rem;
     margin-right: .25rem;
+    cursor: pointer;
+    filter: hue-rotate(130deg);
 }
 .textbar
 {
-    width: 18.5rem;
+    width: 18.35rem;
     height: 2rem;
-    border-style: solid;
-    border-color: #000000;
-    border-width: 0.1rem;
-    border-radius: 0.3rem;
+    outline: none;
+    border: .15rem solid #ffa3b9;
+    box-shadow: 0px 0px 2px black;
+    border-radius: .3rem;
+    transition: .25s ease-in-out;
+}
+.textbar:focus
+{
+    border-color: #cf264e;
+    box-shadow: 0px 0px 5px #ff6d8f;
 }
 .submit
 {
@@ -2526,8 +2540,9 @@ input
 {
     width: 12.7rem;
     outline: none;
-    border: .15rem solid #ffa3b9;
-    background-color: #ffa3b9;
+    filter: hue-rotate(90deg);
+    border: .15rem solid rgb(41, 38, 189);
+    background-color: rgb(41, 38, 189);
     color: white;
     box-shadow: 0px 0px 2px black;
     border-radius: .3rem;
@@ -2541,14 +2556,14 @@ input
 }
 .user-input-date:focus
 {
-    border-color: #cf264e;
-    box-shadow: 0px 0px 5px #ff6d8f;
-    background-color: #cf264e;
+    border-color: rgb(41, 38, 189);
+    box-shadow: 0px 0px 5px rgb(41, 38, 189);
+    background-color: rgb(41, 38, 189);
 }
 .user-input-date:hover
 {
-    background-color: #cf264e;
-    border-color: #cf264e;
+    background-color: rgb(41, 38, 189);
+    border-color: rgb(41, 38, 189);
 }
 .profile-username
 {
@@ -2613,7 +2628,7 @@ input
 	position: absolute;
 	margin-top: 28.7rem;
 	margin-left: 80rem;
-    	cursor: pointer;
+    cursor: pointer;
 	z-index: 1;
 	filter: saturate(95%);
 }
