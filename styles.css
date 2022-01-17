@@ -1206,7 +1206,6 @@ img
     text-align: center;
     color: white;
     text-shadow: 5px 5px #ff678d;
-    padding-top: 3rem;
 }
 
 figure{
@@ -1254,11 +1253,11 @@ figure:hover
 }
 .title
 {
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 0.5rem;
-    color: black;
-    font-weight: bold;
+	font-size: 1rem;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	margin-top: 1rem;
 }
 .desc
 {
@@ -1588,7 +1587,14 @@ figure:hover
     color: white;
     font-family: sans-serif;
 }
-
+.faq-feedback
+{
+	cursor: pointer;
+}
+.faq-feedback:link
+{
+	color: #FC46AA;
+}
 
 /* --------------------FEEDBACK--------------------- */
 .background
