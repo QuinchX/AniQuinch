@@ -2219,8 +2219,15 @@ input
     padding: 3rem;
     border-radius: 15px;
     background-color: rgb(77, 6, 47);
-    transition: .50s ease-in-out;
+    cursor: pointer;
+    transition: .25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.397);
+}
+.card1:hover
+{
+    transform: scale(110%);
+    transform: perspective(55rem) rotateX(5deg);
+    box-shadow: 0px 0px 13px black;
 }
 .card1-title
 {
@@ -2246,8 +2253,15 @@ input
     padding: 3rem;
     border-radius: 15px;
     background-color: rgb(77, 6, 47);
-    transition: .50s ease-in-out;
+    transition: .25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    cursor: pointer;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.397);
+}
+.card2:hover
+{
+    transform: scale(110%);
+    transform: perspective(55rem) rotateX(5deg);
+    box-shadow: 0px 0px 13px black;
 }
 .card2-title
 {
@@ -2273,8 +2287,15 @@ input
     padding: 3rem;
     border-radius: 15px;
     background-color: rgb(77, 6, 47);
-    transition: .50s ease-in-out;
+    transition: .25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    cursor: pointer;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.397);
+}
+.card3:hover
+{
+    transform: scale(110%);
+    transform: perspective(55rem) rotateX(5deg);
+    box-shadow: 0px 0px 13px black;
 }
 .card3-title
 {
