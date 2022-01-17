@@ -30,6 +30,7 @@ body
     display: flex;
     flex-direction: column;
     align-content: center;
+    align-items: center;
 }
 .main-wrapper-terms
 {
@@ -517,7 +518,8 @@ body
 }
 .aniquinch-footer-wrapper
 {
-	height: 34rem;
+	height: 100%;
+    width: 200rem;
 	background-color:#000000;
 	position: relative;
 	top: 67rem;
