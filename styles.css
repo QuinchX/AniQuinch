@@ -801,8 +801,8 @@ body
 {
     width: 100%;
     position: relative;
-    bottom: 17rem;
     display: flex;
+    transform: translateY(-850%);
     justify-content: space-between;
 }
 .button1
