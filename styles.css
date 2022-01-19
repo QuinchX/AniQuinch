@@ -782,9 +782,19 @@ body
 {
     display: flex;
 }
-img
+.carousel-image
+{
+    width: 50rem;
+    transition: 1s ease-out;
+}
+.carousel-image1
 {
     width: 100%;
+    transition: 1s ease-out;
+}
+.carousel-image2
+{
+    width: 40rem;
     transition: 1s ease-out;
 }
 .navigation 

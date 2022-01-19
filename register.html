@@ -86,9 +86,8 @@
 				</div>
 			</div>
 			<!-- -------Background------- -->
-			<div class="background1"></div>
-			<div class="bg-image">
-				<img src="images/background.jpg" alt="">
+			<div>
+				<img class="bg-image" src="images/background.jpg" alt="">
 			</div>
 			<!-- -------Footer------- -->
 			<div class="register-footer-wrapper" id="Contacts">
@@ -149,10 +148,10 @@
 								<h3 class="featured-title" >WHAT'S NEW</h3>
 							</div>
 							<div class="carousel" id="carousel">
-								<img class="carousel-image1" id="carousel-image1" src="images/makima-clothing.png" alt="image">
+								<img class="carousel-image2" id="carousel-image1" src="images/makima-clothing.png" alt="image">
 								<img class="carousel-image2" id="carousel-image2" src="images/itadori-figurine.png" alt="image">
-								<img class="carousel-image3" id="carousel-image3" src="images/sakamoto-days.png" alt="image">
-								<img class="carousel-image4" id="carousel-image4" src="images/mushoku-case.png" alt="image">
+								<img class="carousel-image2" id="carousel-image3" src="images/sakamoto-days.png" alt="image">
+								<img class="carousel-image2" id="carousel-image4" src="images/mushoku-case.png" alt="image">
 							</div>
 							<div class="navigation" style="z-index: 5;">
 								<img class="button1" id="button1" src="images/left-arrow.png" alt="left arrow">
@@ -179,25 +178,5 @@
 			</div>
 		</div>
 	</body>
-	<script>
-		// Carousel Function
-		const carousel = document.querySelector("#carousel");
-		const images = document.querySelectorAll(".carousel img");
-		const btn1 = document.querySelector("#button1");
-		const btn2 = document.querySelector("#button2");
-		var About = document.querySelector("#About");
-		let counter = 0;
-		btn1.addEventListener('click', function(){
-			if(counter <= 0) return;
-			carousel.style.transition = "transform 1s ease-in-out";
-			counter--;
-			carousel.style.transform = 'translateX(' + (-640 * counter) + 'px)';
-		});
-		btn2.addEventListener('click', function(){
-			if(counter >= images.length - 1) return;
-			carousel.style.transition = "transform 1s ease-in-out";
-			counter++;
-			carousel.style.transform = 'translateX(' + (-640 * counter) + 'px)';
-		});
-	</script>
+	<script src="script.js"></script>
 </html>
