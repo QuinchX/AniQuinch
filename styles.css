@@ -1759,7 +1759,7 @@ figure:hover
 {
     padding: 0.625rem 0 0 0;
     position: absolute;
-    top: 6.5rem;
+    top: 7.5rem;
 }
 .bar2
 {
@@ -1849,7 +1849,7 @@ input
     cursor: pointer;
     display: block;
     align-self: center;
-    margin-top: 1.5rem;
+    margin-top: 2.25rem;
     background: linear-gradient(to right, #ffabf9, #ffba82);
     border: 0;
     outline: none;
